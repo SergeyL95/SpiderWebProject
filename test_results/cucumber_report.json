@@ -1,0 +1,134 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "line": 24,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2404651900,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "As a user, I am on the login page",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.as_a_user_i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-04-26T04:09:53.372Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4812288200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.setup()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Successful login",
+        "description": "",
+        "id": "crater-app-user-management;successful-login",
+        "after": [
+          {
+            "result": {
+              "duration": 686562000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 888905400,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I enter valid username and valid password",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_enter_valid_username_and_valid_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 103946100,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I click on login button",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2218681000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I should be on user profile page",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_should_be_on_user_profile_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@validLogin"
+          },
+          {
+            "name": "@smokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Crater app user management",
+    "description": "  Users with permissions should be able interact \n  with the application on successful login",
+    "id": "crater-app-user-management",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/userManagement.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 19,
+          "column": 1
+        }
+      },
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 19,
+          "column": 8
+        }
+      }
+    ]
+  }
+]
