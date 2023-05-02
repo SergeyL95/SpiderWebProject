@@ -1,6 +1,6 @@
 package step_definitions;
 
-<<<<<<< HEAD
+
 import java.util.List;
 
 import org.junit.Assert;
@@ -11,11 +11,24 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 import io.cucumber.java.en.Given;
+
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.CustomersPage;
 import utilities.BrowserUtils;
 import utilities.Driver;
+
+import org.json.JSONObject;
+import org.junit.Assert;
+import io.cucumber.datatable.DataTable;
+
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import utilities.DButils;
+import utilities.DataReader;
+import static io.restassured.RestAssured.given;
+import java.util.List;
 
 public class CustomersManagementSteps {
 	
@@ -161,27 +174,8 @@ public void website_field_is_not_correct_format_i_should_see_invalid_url_ex_http
 public void i_provide_valid_input_for_the_required_fields_and_click_save_customer_button_i_should_be_directed_to_sales_expenses_page() {
    
 }
-=======
-import org.json.JSONObject;
-import org.junit.Assert;
 
-import io.cucumber.datatable.DataTable;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 
->>>>>>> b4249ff1c9d24bae310109f20f4e73be190a5d33
-
-import io.restassured.response.Response;
-import utilities.DButils;
-import utilities.DataReader;
-import static io.restassured.RestAssured.given;
-
-import java.util.List;
-
-public class CustomersManagementSteps {
 	
 	static Response response;
 	static JSONObject requestBodyLogin;
