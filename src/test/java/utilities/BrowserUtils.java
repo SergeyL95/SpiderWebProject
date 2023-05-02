@@ -2,20 +2,29 @@ package utilities;
 
 import java.util.Random;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+<<<<<<< HEAD
 
 //import utilites.Driver;
+=======
+//import utils.Driver;
+>>>>>>> a427c00cd20cb15fc295eb836342ac40ebd0b25d
 
 public class BrowserUtils {
 
 	WebDriverWait wait;
 	Select letsSelect;
+<<<<<<< HEAD
 	Actions action;
+=======
+	JavascriptExecutor js;
+>>>>>>> a427c00cd20cb15fc295eb836342ac40ebd0b25d
 
 	
 	
@@ -25,6 +34,7 @@ public class BrowserUtils {
 	 wait.until(ExpectedConditions.visibilityOf(element));
 		
 	}
+<<<<<<< HEAD
 	//wait for an element to be gone
 	public void waitUntilElementNotVisible(WebElement element) {
 		 wait = new WebDriverWait(Driver.getDriver(), 20);
@@ -39,6 +49,15 @@ public class BrowserUtils {
 	}
 	
 	//sendkeys via actions class to the field that is not exteractable
+=======
+	
+	public void waitUntilElementToBeClickable(WebElement element) {
+		wait = new WebDriverWait(Driver.getDriver(), 10);
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+	}
+
+	// sendkeys via actions class to the field that is not enteractable
+>>>>>>> a427c00cd20cb15fc295eb836342ac40ebd0b25d
 	public void actionsSendKeys(WebElement element, String text) {
 		action = new Actions(Driver.getDriver());
 		action.sendKeys(element, text).build().perform();
@@ -87,6 +106,7 @@ public class BrowserUtils {
 		int randomNum = rand.nextInt((999 - 100) + 1) + 100;
 		return randomNum;
 	}
+<<<<<<< HEAD
 	
 	// this method checks if an element exist in the dom (in the whole html)
 	public boolean isElementPresent(WebElement element) {
@@ -102,4 +122,15 @@ public class BrowserUtils {
 	
 
 	
+=======
+
+	public void scrollToElement (WebElement element) {
+		
+		js =(JavascriptExecutor) Driver.getDriver();
+		js.executeScript("arguments[0].scrollIntoView(true);", element);
+		
+	}
+
+
+>>>>>>> a427c00cd20cb15fc295eb836342ac40ebd0b25d
 }

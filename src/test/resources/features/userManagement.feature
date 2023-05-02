@@ -1,31 +1,59 @@
-#Author: your.email@your.domain.com
-#Keywords Summary :
-#Feature: List of scenarios.
-#Scenario: Business rule through list of steps with arguments.
-#Given: Some precondition step
-#When: Some key actions
-#Then: To observe outcomes or validation
-#And,But: To enumerate more Given,When,Then steps
-#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
-#Examples: Container for s table
-#Background: List of steps run before each of the scenarios
-#""" (Doc Strings)
-#| (Data Tables)
-#@ (Tags/Labels):To group Scenarios
-#<> (placeholder)
-#""
-## (Comments)
-#Sample Feature Definition Template
+<<<<<<< HEAD
+
 @login @regression
 Feature: Crater app user management
   Users with permissions should be able interact 
   with the application on successful login
+=======
+@forgotPassword @regression
+Feature: Crater Forgot Password
+>>>>>>> b4249ff1c9d24bae310109f20f4e73be190a5d33
 
   Background: 
-    Given As a user, I am on the login page
+    Given I am crater user, I navigate to the Login screen
+    And I click on the Forget Password? Link
 
-  @validLogin @smokeTest
-  Scenario: Successful login
-    When I enter valid username and valid password
-    And I click on login button
-    Then I should be on user profile page
+  @forgotPasswordLink
+  Scenario: As a user, i should be able to click on the forget password link
+    Then I should be directed to a new page
+    And I should see text box titled Enter email, Send Reset Link, Back to Login
+
+  @resetPassword
+  Scenario: As a user, i should be able to reset password
+    And I enter a value for the email value
+    Then click on the Send Reset Link
+    Then I navigate to my gmail
+    And I enter username and password
+
+  @invalidResetPassword
+  Scenario: 
+    And I enter invalid value for the "email" value amd enter email in the incorrect format "craterusertesting.gmail.com"
+    Then I should see error message Incorrect Email
+    And If I leave email field " "
+    Then I should see error message Field is required
+
+  @resetPasswordviaEmail
+  Scenario: As a user, i should be able to reset password via email
+    Then I enter valid Email
+    And I click on Send Reset Link
+    Then I navigate to my gmail
+    And I enter "username" and "password"
+      | craterusertesting@gmail.com | CraterAppUser123 |
+    Then I click on the Reset Password link in the email i received
+    Then I should be directed to a new page with Email, Password, Retype Password
+    And i enter valid "username" "password" and "retype password"
+      | craterusertesting@gmail.com | Password1234@ | Password1234@ |
+    Then If i validation passed, i should be able to reset my account password
+    And directed to the login page
+
+  @invalidResetPasswordviaEmail
+  Scenario: As a user, i should be able to reset password via email
+    Then I enter valid Email
+    And I click on Send Reset Link
+    Then I navigate to my gmail
+    And I enter "username" and "password"
+      | craterusertesting@gmail.com | CraterAppUser123 |
+    Then I click on the Reset Password link in the email i received
+    Then I should be directed to a new page with Email, Password, Retype Password
+    And i enter invalid "username" "password" and "retype password" and i should see error message
+      | craterusertesting@craterss.com | password12343 | password12343 |
