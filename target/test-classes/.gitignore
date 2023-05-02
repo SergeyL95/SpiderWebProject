@@ -1,4 +1,8 @@
-/step_definitions/
-/runners/
 /pages/
+/runners/
+<<<<<<< HEAD
+/pages/
+=======
+/step_definitions/
+>>>>>>> main
 /utilities/

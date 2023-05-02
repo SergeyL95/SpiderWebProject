@@ -19,6 +19,11 @@ public class BrowserUtils {
 		wait = new WebDriverWait(Driver.getDriver(), 5);
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
+	
+	public void waitUntilElementToBeClickable(WebElement element) {
+		wait = new WebDriverWait(Driver.getDriver(), 10);
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+	}
 
 	// sendkeys via actions class to the field that is not enteractable
 	public void actionsSendKeys(WebElement element, String text) {
@@ -56,4 +61,5 @@ public class BrowserUtils {
 		int randomNum = rand.nextInt((999 - 100) + 1) + 100;
 		return randomNum;
 	}
+	
 }
