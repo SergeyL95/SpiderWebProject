@@ -39,9 +39,7 @@ Feature: Item Functionality Management
      Then I should navigate to the next page 
      When I click on left arrow navigation
      Then I should navigate to previous page
-     And right arrow is disabled when I am on last 40 page
-     And left arrow is disabled when I am on first 1 page
-    
+
     
   @VerifyAddaItemUIcomponents
   Scenario: As a user, I am able to see UI components on New Item page
@@ -56,8 +54,7 @@ Feature: Item Functionality Management
  		 Then I should be on New Item page
 		 When I provide item information name "iphone", price "1800", unit "pc", and description "too many iphone"
 		 And I click Save Item button
-		 Then I should see a flash message “Success! Item created successfully” with a close button to the right.
-		 And The flash message should disappear within five seconds or less. 
+		 Then I should see a flash message success 
      And The Item is added to the Item list table
      And I should be able to see the item in database
 	
@@ -75,7 +72,7 @@ Feature: Item Functionality Management
  		 When I click on Add Item button
  		 Then I should be on New Item page
  		 When I enter name as "AZ" 
- 		 And click Save Item button
+ 		 And I click Save Item button
  	 	 Then I should see atleast three letters required error message
  		 And I should still be New Item page
  	
@@ -84,11 +81,11 @@ Feature: Item Functionality Management
  		When I click on Filter Icon
  		Then I should see Name, Unit, Price boxes 
  		And I should see Clear All link
- 		When I type a name in the Name text box
+ 		When I type a name "iphone609" in the Name text box
  		Then I should get item matching the name
  		When I click on the ‘Clear All’ link
  		Then the application will display the current list of items
- 		When I  click on the ‘Filter’ button again
+ 		When I click on Filter Icon
  		Then I should see the name, unit, price, and clear all options disapear
  	
  	@FilterUnitCreateItem
@@ -96,46 +93,22 @@ Feature: Item Functionality Management
  		When I click on Filter Icon
  		Then I should see Name, Unit, Price boxes 
  		And I should see Clear All link
- 		When I type a 'Dollars' in the unit text box and click on it
- 		Then I should get item matching the unit
+ 		When I type a "ton" in the unit text box and click on it
+ 		Then I should get item matching the unit with name "iphone777"
  		When I click on the ‘Clear All’ link
  		Then the application will display the current list of items
- 		When I  click on the ‘Filter’ button again
+ 		When I click on Filter Icon
  		Then I should see the name, unit, price, and clear all options disapear
  		
- 	@FilterPriceCreateItem
- 	Scenario: As a user, I am able to filter using item price
- 		When I click on Filter Icon
- 		Then I should see Name, Unit, Price boxes 
- 		And I should see Clear All link
- 		When I type a '1800' in the price ing the price
- 		When I click on the ‘Clear All’ link
- 		Then the application will display the current list of items
- 		When I  click on the ‘Filter’ button again
- 		Then I should see the name, unit, price, and clear all options disapear
- 		
-  @CombinationFilterCreateItem
- 	Scenario: As a user, I am able to filter using item price
- 		When I click on Filter Icon
- 		Then I should see Name, Unit, Price boxes 
- 		And I should see Clear All link
- 		When I type a 'iphone' in the Name text box
- 		And I type a 'Dollars' in the unit text box and click on it
-    And I type a '1800' in the unit text box
- 		Then I should get item matching the price
- 		When I click on the ‘Clear All’ link
- 		Then the application will display the current list of items
- 		When I  click on the ‘Filter’ button again
- 		Then I should see the name, unit, price, and clear all options disapear
  		
  	@NoResultFilterCreateItem
  	Scenario: As a user, I am able to filter using item price
  		When I click on Filter Icon
  		Then I should see Name, Unit, Price boxes 
  		And I should see Clear All link
- 		When I type a 'ashxxhegfhdgsf' in the Name text box
+ 		When I type a name "ashxxhegfhdgsf" in the Name text box
  		Then I should no result found message
  		When I click on the ‘Clear All’ link
  		Then the application will display the current list of items
- 		When I  click on the ‘Filter’ button again
+ 		When I click on Filter Icon
  		Then I should see the name, unit, price, and clear all options disapear

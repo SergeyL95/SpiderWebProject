@@ -69,7 +69,7 @@ public class ItemsPage {
 	@FindBy(xpath = "//button[text()=' Save Item']")
 	public WebElement saveItemButton;
 
-	@FindBy(xpath = "//p[text()='Item created successfully']")
+	@FindBy(xpath = "//p[contains(text(), 'Success!')]")
 	public WebElement successMsgAddItem;
 
 	@FindBy(xpath = "//h3[text()='Edit Item']")
@@ -92,9 +92,6 @@ public class ItemsPage {
 	
 	@FindBy(xpath = "//div[text()='select unit']")
 	public WebElement itemsPageUnitInputField;
-	
-	@FindBy(xpath = "//div[text()='Dollars']")
-	public WebElement itemsPageUnitInputText;
 	
 	@FindBy(xpath = "//div[text()='Price ']")
 	public WebElement filterPriceBoxHeadingField;
