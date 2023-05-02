@@ -1,13 +1,5 @@
-<<<<<<< HEAD
 Manifest-Version: 1.0
 Built-By: Irada
 Build-Jdk: 17.0.5
 Created-By: Maven Integration for Eclipse
 
-=======
-Manifest-Version: 1.0
-Built-By: sj192
-Build-Jdk: 17.0.4.1
-Created-By: Maven Integration for Eclipse
-
->>>>>>> b4249ff1c9d24bae310109f20f4e73be190a5d33

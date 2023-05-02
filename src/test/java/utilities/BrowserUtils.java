@@ -65,14 +65,13 @@ public class BrowserUtils {
 		int randomNum = rand.nextInt((999 - 100) + 1) + 100;
 		return randomNum;
 	}
-<<<<<<< HEAD
+
 	public void scrollToElement (WebElement element) {
 		
 		js =(JavascriptExecutor) Driver.getDriver();
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
 		
 	}
-=======
-	
->>>>>>> b4249ff1c9d24bae310109f20f4e73be190a5d33
+
+
 }
