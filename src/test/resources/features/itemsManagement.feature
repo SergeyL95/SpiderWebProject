@@ -36,7 +36,7 @@ Feature: Edit item in Prime Tech Invoice Application
     And I should be able to view that the item is updated within the items table
     And the application database should be updated with the Edits made by me for the respective item
 
-  @Test2
+  @Editinganitem
   Scenario: Editing an item
     When I click on edit
     Then I should be directed to the Edit Item page.
@@ -52,7 +52,7 @@ Feature: Edit item in Prime Tech Invoice Application
     And I should be able to view that the item is updated within the items table
     And The application database should be updated with the Edits made by the user for the respective item\
 
-  @Test3
+  @Deletinganitem
   Scenario: Deleting an item
     When I click on Delete
     Then I should be prompted with the Modal
@@ -69,7 +69,7 @@ Feature: Edit item in Prime Tech Invoice Application
     And the item should not be visible within the table
     And the item’s record should be deleted from the application database
 
-  @Test4
+  @DeleteItem-MultipleDeletion
   Scenario: Delete Item - Multiple Deletion
     And I should be able to view all the item fields
     And I should be able to edit all the item fields
