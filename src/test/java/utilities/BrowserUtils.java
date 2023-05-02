@@ -2,17 +2,21 @@ package utilities;
 
 import java.util.Random;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+//import utils.Driver;
+
 public class BrowserUtils {
 
 	Actions action;
 	WebDriverWait wait;
 	Select letsSelect;
+	JavascriptExecutor js;
 
 	// waits for an element to be visible
 	public void waitUntilElementVisible(WebElement element) {
@@ -61,5 +65,14 @@ public class BrowserUtils {
 		int randomNum = rand.nextInt((999 - 100) + 1) + 100;
 		return randomNum;
 	}
+<<<<<<< HEAD
+	public void scrollToElement (WebElement element) {
+		
+		js =(JavascriptExecutor) Driver.getDriver();
+		js.executeScript("arguments[0].scrollIntoView(true);", element);
+		
+	}
+=======
 	
+>>>>>>> b4249ff1c9d24bae310109f20f4e73be190a5d33
 }
