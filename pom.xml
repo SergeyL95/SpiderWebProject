@@ -43,6 +43,23 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.28</version>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+	<dependency>
+   	 	<groupId>io.rest-assured</groupId>
+    	<artifactId>rest-assured</artifactId>
+    	<version>4.4.0</version>
+    	<scope>test</scope>
+	</dependency>
+	
+	<dependency>
+    	<groupId>org.json</groupId>
+    	<artifactId>json</artifactId>
+    	<version>20210307</version>
+	</dependency>
+
+
+
 
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>

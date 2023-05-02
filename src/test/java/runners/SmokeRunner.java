@@ -12,14 +12,9 @@ import io.cucumber.junit.CucumberOptions;
 				"json:test_results/cucumber_report.json"},
 		features="./src/test/resources/features",
 		glue="step_definitions",
-<<<<<<< HEAD
-		tags="@basicInfoValidation",
-=======
-		tags="@resetPassword",
->>>>>>> b4249ff1c9d24bae310109f20f4e73be190a5d33
+		tags="@smokeTest",
 		publish=true
 		)
-
-public class TestRunner {
+public class SmokeRunner {
 
 }

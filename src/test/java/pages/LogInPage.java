@@ -34,6 +34,42 @@ public class LogInPage {
 	@FindBy (xpath = "//span[text()='Field is required']")
 	public WebElement fieldIsRequiredMessage;
 	
+	@FindBy (xpath = "//a[text()='Forgot Password?']")
+	public WebElement forgotPassword;
+	
+	@FindBy (xpath = "//div[text()='Enter email ']")
+	public WebElement enterEmail;
+	
+	@FindBy (xpath = "//div[text()='Send Reset Link']")
+	public WebElement sendResetLinkButton;
+	
+	@FindBy (xpath = "//a[text()='Back to Login?']")
+	public WebElement backToLoginLink;
+	
+	@FindBy (xpath = "//span[text()='Incorrect Email.']")
+	public WebElement incorrectEmailErrorMsg;
+	
+	@FindBy (xpath = "//span[text()='Field is required']")
+	public WebElement fieldIsRequiredErrorMsg;
+	
+	@FindBy (xpath = "//a[text()='Sign in']")
+	public WebElement gmailSignInButton;
+	
+	@FindBy (xpath = "//input[@id='identifierId']")
+	public WebElement gmailEmailToLogin;
+	
+	@FindBy (xpath = "//span[text()='Next']")
+	public WebElement gmailLoginNextButton;
+	
+	@FindBy (xpath = "//input[@name='Passwd']")
+	public WebElement gmailPasswdToLogin;
+	
+	@FindBy (xpath = "//tr[@class='zA yO x7']")
+	public WebElement resetPasswordNotificationOnGmail;
+	
+	
+	
+	
 	public void login() {
 		utils.actionsSendKeys(emailField, DataReader.getProperty("username"));
 		utils.actionsSendKeys(passwordField, DataReader.getProperty("password"));
