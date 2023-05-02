@@ -17,10 +17,34 @@ public class ItemsPage {
 
 	@FindBy(xpath = "//h3[text()='Items']")
 	public WebElement itemsPageHeaderText;
+	
+	@FindBy(xpath = "//a[text()='Home']")
+	public WebElement itemsMenuNavigationPathHome;
+	
+	@FindBy(xpath = "//span[text()='/']")
+	public WebElement itemsMenuNavigationPathforwardSlash;
+	
+	@FindBy(xpath = "//a[text()='Items']")
+	public WebElement itemsMenuNavigationPathItems;
 
 	@FindBy(xpath = "//button[text()=' Add Item']")
 	public WebElement addItemButton;
+	
+	@FindBy(xpath = "//input[@variant='primary']")
+	public WebElement itemsPageSelectAllPrimaryCheckBox;
 
+	@FindBy(xpath = "//th[text()='Name ']")
+	public WebElement itemsPageTableNameHeadingText;
+	
+	@FindBy(xpath = "//th[text()='Unit ']")
+	public WebElement itemsPageTableUnitHeadingText;
+	
+	@FindBy(xpath = "//th[text()='Price ']")
+	public WebElement itemsPageTablePriceHeadingText;
+	
+	@FindBy(xpath = "//th[text()='Added On ']")
+	public WebElement itemsPageAddedOnHeadingText;
+	
 	@FindBy(xpath = "//h3[text()='New Item']")
 	public WebElement addItemPageHeaderText;
 
@@ -45,7 +69,8 @@ public class ItemsPage {
 	@FindBy(xpath = "//button[text()=' Save Item']")
 	public WebElement saveItemButton;
 
-	// a[text()='Soccer']
+	@FindBy(xpath = "//p[text()='Item created successfully']")
+	public WebElement successMsgAddItem;
 
 	@FindBy(xpath = "//h3[text()='Edit Item']")
 	public WebElement editItemHeaderText;
@@ -56,14 +81,41 @@ public class ItemsPage {
 	@FindBy(xpath= "//button[text()='Filter ']")
 	public WebElement filterButton;
 	
+	@FindBy (xpath = "//div[text()='Name ']")
+	public WebElement filterNameBoxHeading;
+	
 	@FindBy (xpath = "//div[@name='name']")
-	public WebElement filterNameBox;
+	public WebElement filterNameInputField;
+	
+	@FindBy(xpath = "//div[text()='Unit ']")
+	public WebElement filterUnitBoxHeading;
+	
+	@FindBy(xpath = "//div[text()='select unit']")
+	public WebElement itemsPageUnitInputField;
+	
+	@FindBy(xpath = "//div[text()='Dollars']")
+	public WebElement itemsPageUnitInputText;
+	
+	@FindBy(xpath = "//div[text()='Price ']")
+	public WebElement filterPriceBoxHeadingField;
+	
+	@FindBy(xpath = "(//div[@class='flex flex-col mt-1'])[3]")
+	public WebElement filterPriceInputField;
+	
+	@FindBy(xpath = "//label[text()='Clear All']")
+	public WebElement filterClearAll;
+	
+	@FindBy(xpath = "//p[text()=' Showing   ']")
+	public WebElement itemPageShowingPagesMsg;
 	
 	@FindBy(xpath = "//a[text()='%s']")
 	public WebElement itemNameInTheItemsTable;
 	
 	@FindBy(xpath = "(//button[contains(@id, 'headlessui')])[3]")
 	public WebElement filterItem3dot;
+	
+	@FindBy (xpath = "//a[text()=' Edit']")
+	public WebElement filter3dotEditBtn;
 	
 	@FindBy (xpath = "//a[text()=' Delete']")
 	public WebElement filter3dotDeleteBtn;
@@ -73,18 +125,45 @@ public class ItemsPage {
 	
 	@FindBy (xpath = "//span[text()='No Results Found']")
 	public WebElement filterNoResultFoundMessage;
+	
+	@FindBy (xpath = "//p[contains(@class, 'text-sm text-gray')]")
+	public WebElement itemsPagePaginationText;
+	
+	@FindBy (xpath = "//span[text()='Next']")
+	public WebElement itemPageRightPageNavigationBtn;
+	
+	@FindBy (xpath = "//span[text()='Previous']")
+	public WebElement itemPageLeftPageNavigationBtn;
+	
+	@FindBy (xpath = "//a[text()='1']")
+	public WebElement itemPageFirstPage;
+	
+	@FindBy (xpath = "//a[text()='2']")
+	public WebElement itemPageSecondPage;
+	
+	@FindBy (xpath = "(//a[contains(@class, 'disabled')])[2]")
+	public WebElement itemsFirstAndLastPageArrowDisabled;
+	
+	@FindBy (xpath = "//div[text()='Name ']")
+	public WebElement addItemPageNameFieldText;
+	
+	@FindBy (xpath = "//div[text()='Price ']")
+	public WebElement addItemPagePriceFieldText;
+	
+	@FindBy (xpath = "//div[text()='Unit ']")
+	public WebElement addItemPageUnitFieldText;
+	
+	@FindBy (xpath = "//div[text()='Description ']")
+	public WebElement addItemPageDescriptionFieldText;
+	
+	@FindBy (xpath = "//span[text()='Field is required']")
+	public WebElement addItemPageFieldRequiredMsg;
+	
+	@FindBy (xpath = "//span[text()='Name must have at least 3 letters.']")
+	public WebElement addItemPage3LettersRequiredMsg;
+	
+	
 
-	/*
-	 * In ItemsPage class, create a method which accepts 4 parameters, itemName,
-	 * itemPrice, itemUnit, and itemDescription and based on these parameters,
-	 * implement the item creation logic in the method.
-	 * 
-	 * Acceptance criteria: You should be able to call the method and provide 4
-	 * parameters, and the method should create an item in the items page.
-	 * 
-	 * Note: just implement the item creation part starting with itemName till the
-	 * Add Item button.
-	 */
 
 	
     BrowserUtils utils = new BrowserUtils();
@@ -104,8 +183,8 @@ public class ItemsPage {
 	
 	public void deleteAnItem(String name) throws InterruptedException {
 		filterButton.click();
-		utils.waitUntilElementVisible(filterNameBox);
-		utils.actionsSendKeys(filterNameBox, name);
+		utils.waitUntilElementVisible(filterPriceInputField);
+		utils.actionsSendKeys(filterPriceInputField, name);
 //		itemNameInTheItemsTable.findElement(
 //				By.xpath(String.format(itemNameInTheItemsTable.getAttribute("xpath"), name))).isDisplayed();
 		Assert.assertTrue(Driver.getDriver().findElement(By.xpath("//a[text()='"+name+"']")).isDisplayed());
