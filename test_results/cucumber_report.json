@@ -4,6 +4,9 @@
     "line": 2,
     "elements": [
       {
+<<<<<<< HEAD
+        "line": 22,
+=======
         "line": 3,
 =======
 <<<<<<< HEAD
@@ -15,6 +18,7 @@
       {
         "line": 4,
 >>>>>>> b4249ff1c9d24bae310109f20f4e73be190a5d33
+>>>>>>> a427c00cd20cb15fc295eb836342ac40ebd0b25d
         "name": "",
         "description": "",
         "type": "background",
@@ -22,6 +26,29 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 2663560700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "As an enrity user, I am logged in",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.as_an_enrity_user_i_am_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2560989700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I navigate to Items tab",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_navigate_to_items_tab()"
+            },
+            "keyword": "And "
+=======
 <<<<<<< HEAD
               "duration": 3638639000,
               "status": "passed"
@@ -115,10 +142,18 @@
             }
 >>>>>>> 6f2fe41706edba01bdf33206cdf222e6bc0cf464
 >>>>>>> b4249ff1c9d24bae310109f20f4e73be190a5d33
+>>>>>>> a427c00cd20cb15fc295eb836342ac40ebd0b25d
           }
         ]
       },
       {
+<<<<<<< HEAD
+        "start_timestamp": "2023-05-02T15:00:27.695Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1551101600,
+=======
 <<<<<<< HEAD
         "start_timestamp": "2023-05-01T21:13:32.102Z",
         "before": [
@@ -140,6 +175,7 @@
               "duration": 3188949400,
 >>>>>>> 6f2fe41706edba01bdf33206cdf222e6bc0cf464
 >>>>>>> b4249ff1c9d24bae310109f20f4e73be190a5d33
+>>>>>>> a427c00cd20cb15fc295eb836342ac40ebd0b25d
               "status": "passed"
             },
             "match": {
@@ -147,6 +183,12 @@
             }
           }
         ],
+<<<<<<< HEAD
+        "line": 27,
+        "name": "As a user, I am able to see UI components on Items Page",
+        "description": "",
+        "id": "item-functionality-management;as-a-user--i-am-able-to-see-ui-components-on-items-page",
+=======
 <<<<<<< HEAD
         "line": 27,
         "name": "As a user, I am able to create a customer and manage customer",
@@ -165,6 +207,7 @@
         "id": "crater-app-customers-management;successful-customer-creation",
 >>>>>>> 6f2fe41706edba01bdf33206cdf222e6bc0cf464
 >>>>>>> b4249ff1c9d24bae310109f20f4e73be190a5d33
+>>>>>>> a427c00cd20cb15fc295eb836342ac40ebd0b25d
         "after": [
           {
             "embeddings": [
@@ -184,6 +227,9 @@
             ],
             "result": {
 <<<<<<< HEAD
+              "duration": 171911500,
+=======
+<<<<<<< HEAD
               "duration": 435764000,
 =======
 <<<<<<< HEAD
@@ -192,6 +238,7 @@
               "duration": 1044159900,
 >>>>>>> 6f2fe41706edba01bdf33206cdf222e6bc0cf464
 >>>>>>> b4249ff1c9d24bae310109f20f4e73be190a5d33
+>>>>>>> a427c00cd20cb15fc295eb836342ac40ebd0b25d
               "status": "passed"
             },
             "match": {
@@ -205,6 +252,15 @@
           {
             "result": {
 <<<<<<< HEAD
+              "duration": 57816200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I should be navigated to a page titled Items",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_be_navigated_to_a_page_titled_items()"
+=======
+<<<<<<< HEAD
               "duration": 227132000,
               "status": "passed"
             },
@@ -212,11 +268,21 @@
             "name": "Validate I am on the Customers page (Header)",
             "match": {
               "location": "step_definitions.CustomersManagementSteps.validate_i_am_on_the_customers_page_header()"
+>>>>>>> a427c00cd20cb15fc295eb836342ac40ebd0b25d
             },
             "keyword": "Then "
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 3153281800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I should see the menu navigation path as Home Items placed under Items",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_the_menu_navigation_path_as_home_items_placed_under_items()"
+=======
               "duration": 399533000,
               "status": "passed"
             },
@@ -234,11 +300,117 @@
             "match": {
               "location": "step_definitions.UserManagementSteps.i_enter_a_value_for_the_email_value()"
 >>>>>>> b4249ff1c9d24bae310109f20f4e73be190a5d33
+>>>>>>> a427c00cd20cb15fc295eb836342ac40ebd0b25d
             },
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 2026702500,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I should see a secondary button titled Filter",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_a_secondary_button_titled_filter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1057579100,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I should see a primary button titled Add Item",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_a_primary_button_titled_add_item()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88877900,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I should see a table with select all checkbox, NAME, UNIT, PRICE, ADDED ON",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_a_table_with_select_all_checkbox_name_unit_price_added_on()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15690700,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "A link icon showing three dots",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.a_link_icon_showing_three_dots()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2042834700,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I click on a link icon with three dots",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_a_link_icon_with_three_dots()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2038107300,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I should see Edit with an edit icon",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_edit_with_an_edit_icon()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4084396100,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I should see Delete with a delete icon",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_delete_with_a_delete_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4076119400,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Verify the pagination text at the bottom of the page",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.verify_the_pagination_text_at_the_bottom_of_the_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 178959800,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I click on right arrow navigation",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_right_arrow_navigation()"
+=======
 <<<<<<< HEAD
               "duration": 39284000,
               "status": "passed"
@@ -288,11 +460,45 @@
                 }
               ],
               "location": "step_definitions.CustomersManagementSteps.i_click_on_primary_currency_dropdown_i_should_be_able_to_see_different_curencies(java.lang.Integer)"
+>>>>>>> a427c00cd20cb15fc295eb836342ac40ebd0b25d
             },
             "keyword": "When "
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 2068968100,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I should navigate to the next page",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_navigate_to_the_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 162059400,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I click on left arrow navigation",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_left_arrow_navigation()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2050832100,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I should navigate to previous page",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_navigate_to_previous_page()"
+=======
               "duration": 505000,
               "status": "skipped"
             },
@@ -317,6 +523,7 @@
               ],
               "location": "step_definitions.CustomersManagementSteps.i_should_get_http_status_code(int)"
 >>>>>>> 6f2fe41706edba01bdf33206cdf222e6bc0cf464
+>>>>>>> a427c00cd20cb15fc295eb836342ac40ebd0b25d
             },
             "keyword": "Then "
           },
@@ -368,6 +575,1193 @@
         ],
         "tags": [
           {
+<<<<<<< HEAD
+            "name": "@ItemTests"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@VerifyUIComponentsOnItemsPage"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2150207400,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "As an enrity user, I am logged in",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.as_an_enrity_user_i_am_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2772121300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I navigate to Items tab",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_navigate_to_items_tab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-02T15:00:57.857Z",
+        "before": [
+          {
+            "result": {
+              "duration": 729207900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.setup()"
+            }
+          }
+        ],
+        "line": 45,
+        "name": "As a user, I am able to see UI components on New Item page",
+        "description": "",
+        "id": "item-functionality-management;as-a-user--i-am-able-to-see-ui-components-on-new-item-page",
+        "after": [
+          {
+            "result": {
+              "duration": 148424900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 35043100,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I click on Add Item button",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_add_item_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 96375800,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I should be on New Item page",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_be_on_new_item_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1993609800,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I should see fields Name, Price, Unit, Description",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_fields_name_price_unit_description()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ItemTests"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@VerifyAddaItemUIcomponents"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4144082200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "As an enrity user, I am logged in",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.as_an_enrity_user_i_am_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2636246100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I navigate to Items tab",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_navigate_to_items_tab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-02T15:01:05.800Z",
+        "before": [
+          {
+            "result": {
+              "duration": 734640700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.setup()"
+            }
+          }
+        ],
+        "line": 52,
+        "name": "As a user, I am able to add a item successfully",
+        "description": "",
+        "id": "item-functionality-management;as-a-user--i-am-able-to-add-a-item-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 140441300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 34003200,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I click on Add Item button",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_add_item_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 78458300,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I should be on New Item page",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_be_on_new_item_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1781024500,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I provide item information name \"iphone\", price \"1800\", unit \"pc\", and description \"too many iphone\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"iphone\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"1800\"",
+                  "offset": 48
+                },
+                {
+                  "val": "\"pc\"",
+                  "offset": 61
+                },
+                {
+                  "val": "\"too many iphone\"",
+                  "offset": 83
+                }
+              ],
+              "location": "step_definitions.ItemsManagementSteps.i_provide_item_information_name_price_unit_and_description(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30999700,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "I click Save Item button",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_save_item_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21998800,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "I should see a flash message success",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_a_flash_message_success()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2492250100,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "The Item is added to the Item list table",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.the_item_is_added_to_the_item_list_table()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 863080400,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I should be able to see the item in database",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_be_able_to_see_the_item_in_database()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ItemTests"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@ValidCreateItem"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2023723300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "As an enrity user, I am logged in",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.as_an_enrity_user_i_am_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2568203200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I navigate to Items tab",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_navigate_to_items_tab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-02T15:01:18.773Z",
+        "before": [
+          {
+            "result": {
+              "duration": 765291700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.setup()"
+            }
+          }
+        ],
+        "line": 62,
+        "name": "As a user, I am unable to create an item with empty name field",
+        "description": "",
+        "id": "item-functionality-management;as-a-user--i-am-unable-to-create-an-item-with-empty-name-field",
+        "after": [
+          {
+            "result": {
+              "duration": 210826200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 41344500,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "I click on Add Item button",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_add_item_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 85993200,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "I should be on New Item page",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_be_on_new_item_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1471242000,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "I leave the name fild blank",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_leave_the_name_fild_blank()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32644800,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "I click Save Item button",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_save_item_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22593900,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "I should see field is required error message",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_field_is_required_error_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12839800,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "I should still be New Item page",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_still_be_new_item_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ItemTests"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@BlankNameFieldforCreateItem"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2438445000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "As an enrity user, I am logged in",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.as_an_enrity_user_i_am_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2632338800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I navigate to Items tab",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_navigate_to_items_tab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-02T15:01:26.018Z",
+        "before": [
+          {
+            "result": {
+              "duration": 807701800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.setup()"
+            }
+          }
+        ],
+        "line": 71,
+        "name": "As a user, I am unable to create an item with less than three character",
+        "description": "",
+        "id": "item-functionality-management;as-a-user--i-am-unable-to-create-an-item-with-less-than-three-character",
+        "after": [
+          {
+            "result": {
+              "duration": 177011700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 41655800,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "I click on Add Item button",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_add_item_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 112814600,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I should be on New Item page",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_be_on_new_item_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1558250000,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "I enter name as \"AZ\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AZ\"",
+                  "offset": 16
+                }
+              ],
+              "location": "step_definitions.ItemsManagementSteps.i_enter_name_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 43681600,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "I click Save Item button",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_save_item_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25713400,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "I should see atleast three letters required error message",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_atleast_three_letters_required_error_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16914900,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "I should still be New Item page",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_still_be_new_item_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ItemTests"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@InvalidNameFieldforCreateItem"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2028778700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "As an enrity user, I am logged in",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.as_an_enrity_user_i_am_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2606230100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I navigate to Items tab",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_navigate_to_items_tab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-02T15:01:33.884Z",
+        "before": [
+          {
+            "result": {
+              "duration": 768258100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.setup()"
+            }
+          }
+        ],
+        "line": 80,
+        "name": "As a user, I am able to filter using item Name",
+        "description": "",
+        "id": "item-functionality-management;as-a-user--i-am-able-to-filter-using-item-name",
+        "after": [
+          {
+            "result": {
+              "duration": 157920700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20105608900,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "I click on Filter Icon",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_filter_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 49040600,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "I should see Name, Unit, Price boxes",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_name_unit_price_boxes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13001900,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I should see Clear All link",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_clear_all_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 147914700,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "I type a name \"iphone609\" in the Name text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"iphone609\"",
+                  "offset": 14
+                }
+              ],
+              "location": "step_definitions.ItemsManagementSteps.i_type_a_name_in_the_name_text_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1205486200,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "I should get item matching the name",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_get_item_matching_the_name()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 25428000,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "I click on the ‘Clear All’ link",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_the_clear_all_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1945061100,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "the application will display the current list of items",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.the_application_will_display_the_current_list_of_items()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20065918500,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "I click on Filter Icon",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_filter_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25618500,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "I should see the name, unit, price, and clear all options disapear",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_the_name_unit_price_and_clear_all_options_disapear()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ItemTests"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@FilterNameCreateItem"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1986847600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "As an enrity user, I am logged in",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.as_an_enrity_user_i_am_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2510185900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I navigate to Items tab",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_navigate_to_items_tab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-02T15:02:23.035Z",
+        "before": [
+          {
+            "result": {
+              "duration": 727914600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.setup()"
+            }
+          }
+        ],
+        "line": 92,
+        "name": "As a user, I am able to filter using item unit",
+        "description": "",
+        "id": "item-functionality-management;as-a-user--i-am-able-to-filter-using-item-unit",
+        "after": [
+          {
+            "result": {
+              "duration": 164396700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20089348300,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "I click on Filter Icon",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_filter_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 51120000,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "I should see Name, Unit, Price boxes",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_name_unit_price_boxes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13999500,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "I should see Clear All link",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_clear_all_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5174204900,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "I type a \"ton\" in the unit text box and click on it",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ton\"",
+                  "offset": 9
+                }
+              ],
+              "location": "step_definitions.ItemsManagementSteps.i_type_a_in_the_unit_text_box_and_click_on_it(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5042662700,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "I should get item matching the unit with name \"iphone777\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"iphone777\"",
+                  "offset": 46
+                }
+              ],
+              "location": "step_definitions.ItemsManagementSteps.i_should_get_item_matching_the_unit(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20959600,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "I click on the ‘Clear All’ link",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_the_clear_all_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1868856200,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "the application will display the current list of items",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.the_application_will_display_the_current_list_of_items()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20079047700,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "I click on Filter Icon",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_filter_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24259900,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "I should see the name, unit, price, and clear all options disapear",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_the_name_unit_price_and_clear_all_options_disapear()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ItemTests"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@FilterUnitCreateItem"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2368186500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "As an enrity user, I am logged in",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.as_an_enrity_user_i_am_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2530906500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I navigate to Items tab",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_navigate_to_items_tab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-02T15:03:20.796Z",
+        "before": [
+          {
+            "result": {
+              "duration": 709559500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.setup()"
+            }
+          }
+        ],
+        "line": 105,
+        "name": "As a user, I am able to filter using item price",
+        "description": "",
+        "id": "item-functionality-management;as-a-user--i-am-able-to-filter-using-item-price",
+        "after": [
+          {
+            "result": {
+              "duration": 164669700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20092534700,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "I click on Filter Icon",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_filter_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46012200,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "I should see Name, Unit, Price boxes",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_name_unit_price_boxes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15000400,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "I should see Clear All link",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_clear_all_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 152084400,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "I type a name \"ashxxhegfhdgsf\" in the Name text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ashxxhegfhdgsf\"",
+                  "offset": 14
+                }
+              ],
+              "location": "step_definitions.ItemsManagementSteps.i_type_a_name_in_the_name_text_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 802287800,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "I should no result found message",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_no_result_found_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23531000,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "I click on the ‘Clear All’ link",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_the_clear_all_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1901938700,
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "the application will display the current list of items",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.the_application_will_display_the_current_list_of_items()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20072886100,
+              "status": "passed"
+            },
+            "line": 113,
+            "name": "I click on Filter Icon",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_filter_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22600300,
+              "status": "passed"
+            },
+            "line": 114,
+            "name": "I should see the name, unit, price, and clear all options disapear",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_the_name_unit_price_and_clear_all_options_disapear()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ItemTests"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@NoResultFilterCreateItem"
+=======
 <<<<<<< HEAD
             "name": "@forgotPassword"
 =======
@@ -465,10 +1859,21 @@
             "name": "@smokeTest"
 >>>>>>> 6f2fe41706edba01bdf33206cdf222e6bc0cf464
 >>>>>>> b4249ff1c9d24bae310109f20f4e73be190a5d33
+>>>>>>> a427c00cd20cb15fc295eb836342ac40ebd0b25d
           }
         ]
       }
     ],
+<<<<<<< HEAD
+    "name": "Item Functionality Management",
+    "description": "",
+    "id": "item-functionality-management",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/itemsManagement.feature",
+    "tags": [
+      {
+        "name": "@ItemTests",
+=======
 <<<<<<< HEAD
     "name": "Customer Management",
     "description": "",
@@ -490,6 +1895,7 @@
       {
 <<<<<<< HEAD
         "name": "@regression",
+>>>>>>> a427c00cd20cb15fc295eb836342ac40ebd0b25d
         "type": "Tag",
         "location": {
           "line": 1,
@@ -510,9 +1916,13 @@
         }
       },
       {
-        "name": "@regression",
+        "name": "@Regression",
         "type": "Tag",
         "location": {
+<<<<<<< HEAD
+          "line": 19,
+          "column": 12
+=======
 <<<<<<< HEAD
           "line": 1,
           "column": 17
@@ -521,6 +1931,7 @@
           "column": 26
 >>>>>>> 6f2fe41706edba01bdf33206cdf222e6bc0cf464
 >>>>>>> b4249ff1c9d24bae310109f20f4e73be190a5d33
+>>>>>>> a427c00cd20cb15fc295eb836342ac40ebd0b25d
         }
       }
     ]

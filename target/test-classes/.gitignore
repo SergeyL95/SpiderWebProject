@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+/step_definitions/
+/runners/
+/pages/
+=======
 /pages/
 /runners/
 <<<<<<< HEAD
@@ -6,3 +11,4 @@
 /step_definitions/
 >>>>>>> main
 /utilities/
+>>>>>>> a427c00cd20cb15fc295eb836342ac40ebd0b25d
