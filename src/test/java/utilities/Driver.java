@@ -1,5 +1,6 @@
 package utilities;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -7,18 +8,17 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
-
-import io.github.bonigarcia.wdm.ChromeDriverManager;
-import io.github.bonigarcia.wdm.EdgeDriverManager;
-import io.github.bonigarcia.wdm.FirefoxDriverManager;
-
+import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
+import io.github.bonigarcia.wdm.managers.EdgeDriverManager;
+import io.github.bonigarcia.wdm.managers.FirefoxDriverManager;
 
 
 public class Driver {
 	
-public static WebDriver driver;
-	
+
+	public static WebDriver driver;
 	public static WebDriver getDriver() {
+
 //		System.setProperty("webdriver.chrome.driver", 
 //				"/Users/primetech/Documents/SeleniumTools/chromeDriver/chromedriver_mac_arm64/chromedriver");
 	
@@ -37,6 +37,7 @@ public static WebDriver driver;
 					driver = new EdgeDriver();
 					break;
 				case "safari":
+				
 					driver = new SafariDriver();
 					break;
 				case "chrome":
@@ -60,6 +61,7 @@ public static WebDriver driver;
 				driver.quit();
 				driver = null;
 			}
+
 		}
-	}
+}
 

@@ -2,7 +2,6 @@ package step_definitions;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -15,10 +14,8 @@ import utilities.DataReader;
 import utilities.Driver;
 
 
-public class ItemsManagementSteps {
-
+     public class ItemsManagementSteps {
 	 LogInPage loginPage = new  LogInPage();
-
 	 ItemsPage itemsPage =new ItemsPage();
 	 CraterCommonPage commonPage = new CraterCommonPage();
 	 BrowserUtils utils = new BrowserUtils();
@@ -28,8 +25,8 @@ public class ItemsManagementSteps {
 	   static String itemName;
 @Given("I am an external user of the {string}")
 public void i_am_an_external_user_of_the(String string) {
-  Driver.getDriver().get(DataReader.getProperty("appUrl"));
-  loginPage.login();
+    Driver.getDriver().get(DataReader.getProperty("appUrl"));
+    loginPage.login();
 }
 @Given("I navigate to Items tab")
 public void i_navigate_to_items_tab() {
@@ -39,7 +36,7 @@ public void i_navigate_to_items_tab() {
 
 @When("I click on the Add Item button")
 public void i_click_on_the_add_item_button() {
-itemsPage.addItemButton.click();
+  itemsPage.addItemButton.click();
 }
 @Then("I should be on item input page")
 public void i_should_be_on_item_input_page() {
@@ -57,25 +54,31 @@ public void i_provide_item_information_and(String name, String price, String uni
 }
 @When("I click Save Item button")
 public void i_click_save_item_button() {
- itemsPage.saveItemButton.click();
+   itemsPage.saveItemButton.click();
 }
 @Then("The Item is added to the Item list table")
 public void the_item_is_added_to_the_item_list_table() {
-	//if (!utils.isElementPresent(itemsPage.filterNameBox)) {
-		//	utils.waitUntilElementToBeClickable(itemsPage.filterButton);
+	if (!utils.isElementPresent(itemsPage.filterNameBox)) {
+			utils.waitUntilElementToBeClickable(itemsPage.filterButton);
 			itemsPage.filterButton.click();
 			utils.waitUntilElementVisible(itemsPage.filterNameBox);
 			utils.actionsSendKeys(itemsPage.filterNameBox, itemName);
 }
 
-//}
+}
+	 
+	 
+	   
+
 	@Given("I click on the more icon represented by three dots for a given item")
 	public void i_click_on_the_more_icon_represented_by_three_dots_for_a_given_item() {
 	    itemsPage.filterItem3dot.click();
 	}
 	@Given("I click on edit")
 	public void i_click_on_edit() {
+
 	    //itemsPage.edit3dotBtn.click();
+
 	}
 	@Then("I should be directed to the Edit Item page")
 	public void i_should_be_directed_to_the_edit_item_page() {
@@ -90,8 +93,10 @@ public void the_item_is_added_to_the_item_list_table() {
 	}
 	@Then("I should be able to edit all the item fields")
 	public void i_should_be_able_to_edit_all_the_item_fields_mentioned_in_ac(Integer price) {
+
 		itemsPage.addItemPrice.clear();
 		itemsPage.addItemPrice.sendKeys(price.toString());
+
 	}
 	@Then("the application should perform the validations for each respective field")
 	public void the_application_should_perform_the_validations_for_each_respective_field_as_mentioned_in_ac(Integer int1) {
@@ -126,7 +131,5 @@ public void the_item_is_added_to_the_item_list_table() {
 	   
 	}
 }
-
-
 
 

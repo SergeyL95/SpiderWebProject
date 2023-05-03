@@ -73,6 +73,9 @@ public class ItemsPage {
 	
 	@FindBy (xpath = "//span[text()='No Results Found']")
 	public WebElement filterNoResultFoundMessage;
+	
+	@FindBy (xpath = "//a[@id='headlessui-menu-item-139']")
+	public WebElement edit3dotBtn;
 
 	/*
 	 * In ItemsPage class, create a method which accepts 4 parameters, itemName,
