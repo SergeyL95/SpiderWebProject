@@ -18,11 +18,13 @@ public class CommonHooks {
 	}
 	
 	@After
+	
 	public void teardown(Scenario scenario) {
 		if (scenario.isFailed()) {
 			final byte[] screenshot = ((TakesScreenshot)Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
 			scenario.attach(screenshot, "image/png", "screenshot");
 		}
+		
 		Driver.quitDriver();
 	}
 }
