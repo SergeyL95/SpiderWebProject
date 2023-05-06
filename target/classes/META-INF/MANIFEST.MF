@@ -1,13 +1,5 @@
-<<<<<<< HEAD
 Manifest-Version: 1.0
 Built-By: khilola
 Build-Jdk: 17.0.4.1
 Created-By: Maven Integration for Eclipse
 
-=======
-Manifest-Version: 1.0
-Built-By: sammerodiesh
-Build-Jdk: 17.0.5
-Created-By: Maven Integration for Eclipse
-
->>>>>>> a6023d1f0a07f18bc42bb31a4d27ab936b4bbb0f
