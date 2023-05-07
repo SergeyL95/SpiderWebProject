@@ -127,53 +127,53 @@ public class CustomersManagementSteps {
 		}
 	}
 
-@When("I click +New Customer botton, I should directed to New Customer Page")
-public void i_click_new_customer_botton_i_should_directed_to_new_customer_page() {
-    customersPage.addNewCustomerButton.click();
-    utils.waitUntilElementVisible(customersPage.newCustomerPageHeader);
-    Assert.assertTrue(customersPage.newCustomerPageHeader.isDisplayed());
+	@When("I click +New Customer botton, I should directed to New Customer Page")
+	public void i_click_new_customer_botton_i_should_directed_to_new_customer_page() {
+		customersPage.addNewCustomerButton.click();
+		utils.waitUntilElementVisible(customersPage.newCustomerPageHeader);
+		Assert.assertTrue(customersPage.newCustomerPageHeader.isDisplayed());
     
-}
-@When("I should be able to see basic info field")
-public void i_should_be_able_to_see_basic_info_field() {
-  Assert.assertTrue(customersPage.basicInfoText.isDisplayed());
-}
-@When("I click on Primary Currency dropdown, I should be able to see {int} different curencies")
-public void i_click_on_primary_currency_dropdown_i_should_be_able_to_see_different_curencies(Integer int1) {
-	WebElement dropDown=customersPage.currencyDropDownButton;
-	dropDown.click();
-	utils.waitUntilElementVisible(customersPage.currencyDropDownButton);
-	Select choose = new Select(dropDown);
-	List<WebElement> allOptions=choose.getOptions();
-	System.out.println(allOptions.size());
+	}
+	@When("I should be able to see basic info field")
+	public void i_should_be_able_to_see_basic_info_field() {
+		Assert.assertTrue(customersPage.basicInfoText.isDisplayed());
+	}
+	@When("I click on Primary Currency dropdown, I should be able to see {int} different curencies")
+	public void i_click_on_primary_currency_dropdown_i_should_be_able_to_see_different_curencies(Integer int1) {
+		WebElement dropDown=customersPage.currencyDropDownButton;
+		dropDown.click();
+		utils.waitUntilElementVisible(customersPage.currencyDropDownButton);
+		Select choose = new Select(dropDown);
+		List<WebElement> allOptions=choose.getOptions();
+		System.out.println(allOptions.size());
 		//for(WebElement element: allOptions){
 		//	System.out.println(element.getText());
 		//}
-}
-@When("I leave the Display Name field empty, I should see Field is required message")
-public void i_leave_the_display_name_field_empty_i_should_see_field_is_required_message() {
+	}
+	@When("I leave the Display Name field empty, I should see Field is required message")
+	public void i_leave_the_display_name_field_empty_i_should_see_field_is_required_message() {
     
-}
-@When("I input less the three character for the Dispay Name field,I should be able to see Name must have at least {int} letters message")
-public void i_input_less_the_three_character_for_the_dispay_name_field_i_should_be_able_to_see_name_must_have_at_least_letters_message(Integer int1) {
+	}
+	@When("I input less the three character for the Dispay Name field,I should be able to see Name must have at least {int} letters message")
+	public void i_input_less_the_three_character_for_the_dispay_name_field_i_should_be_able_to_see_name_must_have_at_least_letters_message(Integer int1) {
 
-}
-@When("the Email field does not follow \\(@domain.com) format, I should see Incorrect Email message")
-public void the_email_field_does_not_follow_domain_com_format_i_should_see_incorrect_email_message() {
+	}
+	@When("the Email field does not follow \\(@domain.com) format, I should see Incorrect Email message")
+	public void the_email_field_does_not_follow_domain_com_format_i_should_see_incorrect_email_message() {
    
-}
-@When("I input less the three character for the Prefix field,I should be able to see Name must have at least {int} letters message")
-public void i_input_less_the_three_character_for_the_prefix_field_i_should_be_able_to_see_name_must_have_at_least_letters_message(Integer int1) {
+	}
+	@When("I input less the three character for the Prefix field,I should be able to see Name must have at least {int} letters message")
+	public void i_input_less_the_three_character_for_the_prefix_field_i_should_be_able_to_see_name_must_have_at_least_letters_message(Integer int1) {
  
-}
-@When("Website field is not correct format,I should see Invalid url error message")
-public void website_field_is_not_correct_format_i_should_see_invalid_url_ex_http_www_craterapp_com() {
+	}
+	@When("Website field is not correct format,I should see Invalid url error message")
+	public void website_field_is_not_correct_format_i_should_see_invalid_url_ex_http_www_craterapp_com() {
    
-}
-@When("I provide Valid input for the required fields and click Save Customer button, I should be directed to Sales & Expenses page")
-public void i_provide_valid_input_for_the_required_fields_and_click_save_customer_button_i_should_be_directed_to_sales_expenses_page() {
+	}
+	@When("I provide Valid input for the required fields and click Save Customer button, I should be directed to Sales & Expenses page")
+	public void i_provide_valid_input_for_the_required_fields_and_click_save_customer_button_i_should_be_directed_to_sales_expenses_page() {
    
-}
+	}
 
 
 	

@@ -12,7 +12,11 @@ import io.cucumber.junit.CucumberOptions;
 				"json:test_results/cucumber_report.json"},
 		features="./src/test/resources/features",
 		glue="step_definitions",
+<<<<<<< HEAD
 		tags="@login",
+=======
+		tags="@validCreateItem",
+>>>>>>> 899665560319d64df749cbc5bcf5fff7dee2f6fc
 		publish=true
 		)
 
