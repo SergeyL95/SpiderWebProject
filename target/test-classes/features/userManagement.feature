@@ -1,17 +1,11 @@
-<<<<<<< HEAD
 
-@login @regression
-Feature: Crater app user management
-  Users with permissions should be able interact 
-  with the application on successful login
-=======
-@forgotPassword @regression
-Feature: Crater Forgot Password
->>>>>>> b4249ff1c9d24bae310109f20f4e73be190a5d33
+@loginAndForgotPassword @regression
+Feature: Crater Login/Forgot Password
 
   Background: 
-    Given I am crater user, I navigate to the Login screen
+    Given I am crater user, I navigate to the “Prime Tech Invoice Application” login page
     And I click on the Forget Password? Link
+    And I click on the login button
 
   @forgotPasswordLink
   Scenario: As a user, i should be able to click on the forget password link
@@ -57,3 +51,6 @@ Feature: Crater Forgot Password
     Then I should be directed to a new page with Email, Password, Retype Password
     And i enter invalid "username" "password" and "retype password" and i should see error message
       | craterusertesting@craterss.com | password12343 | password12343 |
+      
+      
+
