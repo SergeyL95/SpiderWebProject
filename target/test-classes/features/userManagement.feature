@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @login @regression
 Feature: Crater app user management
   Users with permissions should be able interact 
@@ -6,6 +7,8 @@ Feature: Crater app user management
 
 =======
 >>>>>>> 899665560319d64df749cbc5bcf5fff7dee2f6fc
+=======
+>>>>>>> main
 @forgotPassword @regression
 Feature: Crater Forgot Password
 
