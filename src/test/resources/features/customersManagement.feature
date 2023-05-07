@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 @regression
 Feature: Customer Management
@@ -8,12 +9,17 @@ Background:
 =======
 =======
 >>>>>>> main
+=======
+>>>>>>> main
 	@regression
 	Feature: Customer Management
 	
 	Background:
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 899665560319d64df749cbc5bcf5fff7dee2f6fc
+=======
+>>>>>>> main
 =======
 >>>>>>> main
     Given As a user, I am on the login page
@@ -49,6 +55,7 @@ Background:
 		When I input less the three character for the Prefix field,I should be able to see Name must have at least 3 letters message
 		When Website field is not correct format,I should see Invalid url error message 
 		When I provide Valid input for the required fields and click Save Customer button, I should be directed to Sales & Expenses page
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 <<<<<<< HEAD
@@ -105,6 +112,9 @@ Feature: Crater app customers management
 
 =======
 >>>>>>> 899665560319d64df749cbc5bcf5fff7dee2f6fc
+=======
+
+>>>>>>> main
 =======
 
 >>>>>>> main

@@ -14,10 +14,14 @@ import io.cucumber.junit.CucumberOptions;
 		glue="step_definitions",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		tags="@login",
 =======
 		tags="@validCreateItem",
 >>>>>>> 899665560319d64df749cbc5bcf5fff7dee2f6fc
+=======
+		tags="@validCreateItem",
+>>>>>>> main
 =======
 		tags="@validCreateItem",
 >>>>>>> main
