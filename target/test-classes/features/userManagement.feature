@@ -1,13 +1,5 @@
-<<<<<<< HEAD
-
-@login @regression
-Feature: Crater app user management
-  Users with permissions should be able interact 
-  with the application on successful login
-=======
 @forgotPassword @regression
 Feature: Crater Forgot Password
->>>>>>> b4249ff1c9d24bae310109f20f4e73be190a5d33
 
   Background: 
     Given I am crater user, I navigate to the Login screen
