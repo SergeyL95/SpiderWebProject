@@ -54,3 +54,10 @@ Feature: Crater Forgot Password
     Then I should be directed to a new page with Email, Password, Retype Password
     And i enter invalid "username" "password" and "retype password" and i should see error message
       | craterusertesting@craterss.com | password12343 | password12343 |
+
+      
+      
+      
+      
+      
+      

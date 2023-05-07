@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @regression
 Feature: Customer Management
 Background:
@@ -38,7 +38,7 @@ When Website field is not correct format,I should see Invalid url error message
 When I provide Valid input for the required fields and click Save Customer button, I should be directed to Sales & Expenses page
 
 
-=======
+
 #Author: your.email@your.domain.com
 #Keywords Summary :
 #Feature: List of scenarios.
@@ -57,7 +57,6 @@ When I provide Valid input for the required fields and click Save Customer butto
 #""
 ## (Comments)
 #Sample Feature Definition Template
-
 
 @createCustomerWebervice @regression
 Feature: Crater app customers management
@@ -88,4 +87,4 @@ Feature: Crater app customers management
     Then I should get HTTP Status Code 200
     And a customer should be created in app database
     | Patrick | patty.mahomes@gmail.com |
->>>>>>> b4249ff1c9d24bae310109f20f4e73be190a5d33
+
