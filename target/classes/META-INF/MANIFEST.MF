@@ -1,20 +1,5 @@
 Manifest-Version: 1.0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 Built-By: sj192
 Build-Jdk: 17.0.4.1
-=======
-Built-By: serge
-Build-Jdk: 11.0.15
->>>>>>> 899665560319d64df749cbc5bcf5fff7dee2f6fc
-=======
-Built-By: serge
-Build-Jdk: 11.0.15
->>>>>>> main
-=======
-Built-By: serge
-Build-Jdk: 11.0.15
->>>>>>> main
 Created-By: Maven Integration for Eclipse
 
