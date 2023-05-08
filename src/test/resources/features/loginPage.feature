@@ -24,7 +24,7 @@ And Upon successful login the system should direct the user to the Dashboard pag
 
 @loginWithInvalidCredentials
 Scenario: As a user i should not be able to login with invalid credentials
-And I enter an invalid emailand password value, 
+And I enter an invalid email and password value, 
 Then System should prompt the user with a flash message in a red box with the following text Error Those credentials do not match our records
 And Flash message should have a close button to the right and should disappear from the user’s view in less than or equal to 5 seconds.
 

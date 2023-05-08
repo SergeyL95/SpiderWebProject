@@ -1,43 +1,53 @@
 package step_definitions;
 
+import org.junit.Assert;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.LogInPage;
+import utilities.DataReader;
+import utilities.Driver;
 
 public class LoginUIPage {
 	
+	LogInPage loginpage = new LogInPage();
+	
 	@Given("I am crater user, I navigate to the “Prime Tech Invoice Application” login page")
 	public void i_am_crater_user_i_navigate_to_the_prime_tech_invoice_application_login_page() {
-	    
+		Driver.getDriver().get(DataReader.getProperty("loginURL"));
 	}
 	@Given("Page title crater")
 	public void page_title_crater() {
-	    
+	    loginpage.textCraterOnTheLoginPage.isDisplayed();
 	}
 
 	@Given("text box with label {string} and text box with label {string}")
-	public void text_box_with_label_and_text_box_with_label(String string, String string2) {
-	    
+	public void text_box_with_label_and_text_box_with_label(String emailField, String passwordField) {
+		Assert.assertEquals(emailField, loginpage.emailField.isDisplayed());
+		Assert.assertEquals(passwordField, loginpage.passwordField.isDisplayed());
+		//loginpage.emailField.isDisplayed();
+		//loginpage.passwordField.isDisplayed();
 	}
 
 	@Given("a link titled forgot password? exist")
 	public void a_link_titled_forgot_password_exist() {
-	    
+	    loginpage.forgotPassword.isDisplayed();
 	}
 
 	@Given("a primary button labeled {string}")
 	public void a_primary_button_labeled(String string) {
-	    
+	    loginpage.loginBtn.isDisplayed();
 	}
 
 	@Given("a text area with the following {string} located on the bottom left")
 	public void a_text_area_with_the_following_located_on_the_bottom_left(String string) {
-	   
+	   loginpage.textCopyright.isDisplayed();
 	}
 
 	@Given("a heading with following text {string} exist")
 	public void a_heading_with_following_text_exist(String string) {
-	    
+	    loginpage.textBussiness.isDisplayed();
 	}
 
 	@Given("I enter a valid email and password value")
@@ -57,10 +67,10 @@ public class LoginUIPage {
 
 	@Then("Upon successful login the system should direct the user to the Dashboard page.")
 	public void upon_successful_login_the_system_should_direct_the_user_to_the_dashboard_page() {
-	   
+		Assert.assertTrue(loginpage.accountSettingsHeader.isDisplayed());
 	}
 
-	@Given("I enter an invalid emailand password value,")
+	@Given("I enter an invalid email and password value,")
 	public void i_enter_an_invalid_emailand_password_value() {
 	    
 	}
