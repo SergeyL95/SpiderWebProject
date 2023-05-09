@@ -11,8 +11,9 @@
         "steps": [
           {
             "result": {
-              "duration": 1575100,
-              "status": "skipped"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d112.0.5615.138)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-552TM191\u0027, ip: \u002710.0.0.160\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.15\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\\Users\\serge\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50347}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: fe6e090810ce9f38867ea78df72c9a62\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\r\n\tat pages.LogInPage.login(LogInPage.java:76)\r\n\tat step_definitions.ItemsManagementSteps.as_an_enrity_user_i_am_logged_in(ItemsManagementSteps.java:40)\r\n\tat ✽.As an enrity user, I am logged in(file:///C:/Users/serge/SpiderWebProject/./src/test/resources/features/itemsManagement.feature:5)\r\n",
+              "duration": 4665672700,
+              "status": "failed"
             },
             "line": 5,
             "name": "As an enrity user, I am logged in",
@@ -23,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 4075900,
+              "duration": 1508500,
               "status": "skipped"
             },
             "line": 6,
@@ -36,13 +37,12 @@
         ]
       },
       {
-        "start_timestamp": "2023-05-07T17:16:21.730Z",
+        "start_timestamp": "2023-05-07T17:41:37.540Z",
         "before": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event\n  (failed to check if window was closed: disconnected: not connected to DevTools)\n  (Session info: chrome\u003d112.0.5615.138)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-552TM191\u0027, ip: \u002710.0.0.160\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.15\u0027\nDriver info: driver.version: Driver\nremote stacktrace: Backtrace:\n\tGetHandleVerifier [0x005FDCE3+50899]\n\t(No symbol) [0x0058E111]\n\t(No symbol) [0x00495588]\n\t(No symbol) [0x00489257]\n\t(No symbol) [0x00488DEB]\n\t(No symbol) [0x00488275]\n\t(No symbol) [0x0048820C]\n\t(No symbol) [0x00486F06]\n\t(No symbol) [0x00487668]\n\t(No symbol) [0x00486685]\n\t(No symbol) [0x004913A6]\n\t(No symbol) [0x004864C5]\n\t(No symbol) [0x00487F2A]\n\t(No symbol) [0x00486F06]\n\t(No symbol) [0x00487668]\n\t(No symbol) [0x00486685]\n\t(No symbol) [0x0048ECE6]\n\t(No symbol) [0x004864C5]\n\t(No symbol) [0x00487F2A]\n\t(No symbol) [0x00486F06]\n\t(No symbol) [0x00487668]\n\t(No symbol) [0x00486685]\n\t(No symbol) [0x0048C7FB]\n\t(No symbol) [0x004864C5]\n\t(No symbol) [0x00487F2A]\n\t(No symbol) [0x00486F06]\n\t(No symbol) [0x00487668]\n\t(No symbol) [0x00486685]\n\t(No symbol) [0x00480E2F]\n\t(No symbol) [0x004864C5]\n\t(No symbol) [0x00485E7D]\n\t(No symbol) [0x00485B5C]\n\t(No symbol) [0x00496923]\n\t(No symbol) [0x0047CAE3]\n\t(No symbol) [0x0047C1D5]\n\t(No symbol) [0x004E21CD]\n\t(No symbol) [0x004E1CEC]\n\t(No symbol) [0x004DB6F6]\n\t(No symbol) [0x004B7708]\n\t(No symbol) [0x004B886D]\n\tGetHandleVerifier [0x00863EAE+2566302]\n\tGetHandleVerifier [0x008992B1+2784417]\n\tGetHandleVerifier [0x0089327C+2759788]\n\tGetHandleVerifier [0x00695740+672048]\n\t(No symbol) [0x00598872]\n\t(No symbol) [0x005941C8]\n\t(No symbol) [0x005942AB]\n\t(No symbol) [0x005871B7]\n\tBaseThreadInitThunk [0x76987D49+25]\n\tRtlInitializeExceptionChain [0x7762B74B+107]\n\tRtlClearBits [0x7762B6CF+191]\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\r\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\r\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\r\n\tat java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)\r\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\r\n\tat java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)\r\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat utilities.Driver.getDriver(Driver.java:41)\r\n\tat step_definitions.CommonHooks.setup(CommonHooks.java:16)\r\n",
-              "duration": 8787611200,
-              "status": "failed"
+              "duration": 6666346000,
+              "status": "passed"
             },
             "match": {
               "location": "step_definitions.CommonHooks.setup()"
@@ -55,16 +55,10 @@
         "id": "item-functionality-management;as-a-user--i-am-able-to-add-a-item-successfully",
         "after": [
           {
-            "embeddings": [
-              {
-                "data": "iVBORw0KGgoAAAANSUhEUgAAA6EAAANvCAYAAAAsudzuAAAAAXNSR0IArs4c6QAAE9tJREFUeJzt1zEBACAMwDDAv+fhohwkCvp2z8wsAAAACJzXAQAAAPzDhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJAxoQAAAGRMKAAAABkTCgAAQMaEAgAAkDGhAAAAZEwoAAAAGRMKAABAxoQCAACQMaEAAABkTCgAAAAZEwoAAEDGhAIAAJC5kpYK2uatTJEAAAAASUVORK5CYII\u003d",
-                "mime_type": "image/png",
-                "name": "screenshot"
-              }
-            ],
             "result": {
-              "duration": 8732116500,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d112.0.5615.138)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-552TM191\u0027, ip: \u002710.0.0.160\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.15\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\\Users\\serge\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50347}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: fe6e090810ce9f38867ea78df72c9a62\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)\r\n\tat step_definitions.CommonHooks.teardown(CommonHooks.java:24)\r\n",
+              "duration": 129757700,
+              "status": "failed"
             },
             "match": {
               "location": "step_definitions.CommonHooks.teardown(io.cucumber.java.Scenario)"
@@ -76,7 +70,7 @@
         "steps": [
           {
             "result": {
-              "duration": 105391500,
+              "duration": 4998800,
               "status": "skipped"
             },
             "line": 35,
@@ -88,6 +82,7 @@
           },
           {
             "result": {
+              "duration": 1002000,
               "status": "skipped"
             },
             "line": 36,
@@ -99,7 +94,6 @@
           },
           {
             "result": {
-              "duration": 992700,
               "status": "skipped"
             },
             "line": 37,
@@ -129,7 +123,6 @@
           },
           {
             "result": {
-              "duration": 992100,
               "status": "skipped"
             },
             "line": 38,
@@ -141,7 +134,7 @@
           },
           {
             "result": {
-              "duration": 30303500,
+              "duration": 11004500,
               "status": "skipped"
             },
             "line": 39,
@@ -153,6 +146,7 @@
           },
           {
             "result": {
+              "duration": 509700,
               "status": "skipped"
             },
             "line": 40,
@@ -164,7 +158,6 @@
           },
           {
             "result": {
-              "duration": 993500,
               "status": "skipped"
             },
             "line": 41,
