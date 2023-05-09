@@ -67,6 +67,14 @@ public class LogInPage {
 	@FindBy (xpath = "//tr[@class='zA yO x7']")
 	public WebElement resetPasswordNotificationOnGmail;
 	
+	@FindBy (xpath = "//div[contains(text(), \"Email \")]")
+	public WebElement resetPageEmail;
+	
+	@FindBy (xpath = "//div[contains(text(), \"Password \")]")
+	public WebElement resetPagePassword;
+	
+	@FindBy (xpath = "//div[contains(text(), \"Retype Password \")]")
+	public WebElement resetPageReTypePassword;
 	
 	
 	

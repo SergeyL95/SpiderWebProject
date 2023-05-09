@@ -1,27 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 @regression
-Feature: Customer Management
-Background:
- 
-=======
-=======
->>>>>>> main
-=======
->>>>>>> main
-	@regression
 	Feature: Customer Management
 	
 	Background:
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 899665560319d64df749cbc5bcf5fff7dee2f6fc
-=======
->>>>>>> main
-=======
->>>>>>> main
+
     Given As a user, I am on the login page
     When I enter valid username and valid password
     And I click on login button
@@ -55,10 +36,7 @@ Background:
 		When I input less the three character for the Prefix field,I should be able to see Name must have at least 3 letters message
 		When Website field is not correct format,I should see Invalid url error message 
 		When I provide Valid input for the required fields and click Save Customer button, I should be directed to Sales & Expenses page
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-<<<<<<< HEAD
 
 
 #Author: your.email@your.domain.com
@@ -109,12 +87,3 @@ Feature: Crater app customers management
     Then I should get HTTP Status Code 200
     And a customer should be created in app database
     | Patrick | patty.mahomes@gmail.com |
-
-=======
->>>>>>> 899665560319d64df749cbc5bcf5fff7dee2f6fc
-=======
-
->>>>>>> main
-=======
-
->>>>>>> main
