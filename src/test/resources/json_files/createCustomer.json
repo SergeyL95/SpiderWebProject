@@ -1,0 +1,7 @@
+{
+    "name": "TrevorTestCustomerName",
+    "email": "testCustomerEmail@testing.com",
+    "enable_portal": true,
+    "billing": [],
+    "shipping": []
+}
