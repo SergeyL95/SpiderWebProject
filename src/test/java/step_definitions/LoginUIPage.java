@@ -77,7 +77,7 @@ public class LoginUIPage {
 
 	@Then("System should prompt the user with a flash message in a red box with the following text Error Those credentials do not match our records")
 	public void system_should_prompt_the_user_with_a_flash_message_in_a_red_box_with_the_following_text_error_those_credentials_do_not_match_our_records() {
-	    
+		 
 	}
 
 	@Then("Flash message should have a close button to the right and should disappear from the user’s view in less than or equal to {int} seconds.")
