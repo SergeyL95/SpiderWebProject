@@ -1,9 +1,16 @@
 [
   {
+<<<<<<< HEAD
+    "line": 20,
+    "elements": [
+      {
+        "line": 22,
+=======
     "line": 2,
     "elements": [
       {
         "line": 4,
+>>>>>>> main
         "name": "",
         "description": "",
         "type": "background",
@@ -11,9 +18,14 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 996500,
+              "status": "skipped"
+=======
               "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d112.0.5615.138)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-552TM191\u0027, ip: \u002710.0.0.160\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.15\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\\Users\\serge\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50347}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: fe6e090810ce9f38867ea78df72c9a62\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\r\n\tat pages.LogInPage.login(LogInPage.java:76)\r\n\tat step_definitions.ItemsManagementSteps.as_an_enrity_user_i_am_logged_in(ItemsManagementSteps.java:40)\r\n\tat ✽.As an enrity user, I am logged in(file:///C:/Users/serge/SpiderWebProject/./src/test/resources/features/itemsManagement.feature:5)\r\n",
               "duration": 4665672700,
               "status": "failed"
+>>>>>>> main
             },
             "line": 5,
             "name": "As an enrity user, I am logged in",
@@ -24,10 +36,10 @@
           },
           {
             "result": {
-              "duration": 1508500,
+<<<<<<< HEAD
               "status": "skipped"
             },
-            "line": 6,
+            "line": 24,
             "name": "I navigate to Items tab",
             "match": {
               "location": "step_definitions.ItemsManagementSteps.i_navigate_to_items_tab()"
@@ -37,27 +49,28 @@
         ]
       },
       {
-        "start_timestamp": "2023-05-07T17:41:37.540Z",
+        "start_timestamp": "2023-05-07T02:56:25.371Z",
         "before": [
           {
             "result": {
-              "duration": 6666346000,
-              "status": "passed"
+              "error_message": "java.lang.Error: Unresolved compilation problems: \n\tFirefoxDriverManager cannot be resolved\n\tEdgeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat step_definitions.CommonHooks.setup(CommonHooks.java:16)\r\n",
+              "duration": 15265100,
+              "status": "failed"
             },
             "match": {
               "location": "step_definitions.CommonHooks.setup()"
             }
           }
         ],
-        "line": 34,
-        "name": "As a user, I am able to add a item successfully",
+        "line": 27,
+        "name": "As a user, I am able to see UI components on Items Page",
         "description": "",
-        "id": "item-functionality-management;as-a-user--i-am-able-to-add-a-item-successfully",
+        "id": "item-functionality-management;as-a-user--i-am-able-to-see-ui-components-on-items-page",
         "after": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d112.0.5615.138)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-552TM191\u0027, ip: \u002710.0.0.160\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.15\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\\Users\\serge\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50347}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: fe6e090810ce9f38867ea78df72c9a62\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)\r\n\tat step_definitions.CommonHooks.teardown(CommonHooks.java:24)\r\n",
-              "duration": 129757700,
+              "error_message": "java.lang.Error: Unresolved compilation problems: \n\tFirefoxDriverManager cannot be resolved\n\tEdgeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat step_definitions.CommonHooks.teardown(CommonHooks.java:24)\r\n",
+              "duration": 2998600,
               "status": "failed"
             },
             "match": {
@@ -70,7 +83,374 @@
         "steps": [
           {
             "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "I should be navigated to a page titled Items",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_be_navigated_to_a_page_titled_items()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "I should see the menu navigation path as Home Items placed under Items",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_the_menu_navigation_path_as_home_items_placed_under_items()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "I should see a secondary button titled Filter",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_a_secondary_button_titled_filter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "I should see a primary button titled Add Item",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_a_primary_button_titled_add_item()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "I should see a table with select all checkbox, NAME, UNIT, PRICE, ADDED ON",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_a_table_with_select_all_checkbox_name_unit_price_added_on()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "A link icon showing three dots",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.a_link_icon_showing_three_dots()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "I click on a link icon with three dots",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_a_link_icon_with_three_dots()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "I should see Edit with an edit icon",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_edit_with_an_edit_icon()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "I should see Delete with a delete icon",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_delete_with_a_delete_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "Verify the pagination text at the bottom of the page",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.verify_the_pagination_text_at_the_bottom_of_the_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "I click on right arrow navigation",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_right_arrow_navigation()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "I should navigate to the next page",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_navigate_to_the_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "I click on left arrow navigation",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_left_arrow_navigation()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "I should navigate to previous page",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_navigate_to_previous_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ItemTests"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@VerifyUIComponentsOnItemsPage"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "As an enrity user, I am logged in",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.as_an_enrity_user_i_am_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 996800,
+              "status": "skipped"
+            },
+            "line": 24,
+=======
+              "duration": 1508500,
+              "status": "skipped"
+            },
+            "line": 6,
+>>>>>>> main
+            "name": "I navigate to Items tab",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_navigate_to_items_tab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+<<<<<<< HEAD
+        "start_timestamp": "2023-05-07T02:56:25.594Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.Error: Unresolved compilation problems: \n\tFirefoxDriverManager cannot be resolved\n\tEdgeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat step_definitions.CommonHooks.setup(CommonHooks.java:16)\r\n",
+              "status": "failed"
+=======
+        "start_timestamp": "2023-05-07T17:41:37.540Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6666346000,
+              "status": "passed"
+>>>>>>> main
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.setup()"
+            }
+          }
+        ],
+<<<<<<< HEAD
+        "line": 45,
+        "name": "As a user, I am able to see UI components on New Item page",
+        "description": "",
+        "id": "item-functionality-management;as-a-user--i-am-able-to-see-ui-components-on-new-item-page",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.Error: Unresolved compilation problems: \n\tFirefoxDriverManager cannot be resolved\n\tEdgeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat step_definitions.CommonHooks.teardown(CommonHooks.java:24)\r\n",
+              "duration": 997000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "I click on Add Item button",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_add_item_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999300,
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "I should be on New Item page",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_be_on_new_item_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "I should see fields Name, Price, Unit, Description",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_fields_name_price_unit_description()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ItemTests"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@VerifyAddaItemUIcomponents"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "As an enrity user, I am logged in",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.as_an_enrity_user_i_am_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I navigate to Items tab",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_navigate_to_items_tab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-07T02:56:25.656Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.Error: Unresolved compilation problems: \n\tFirefoxDriverManager cannot be resolved\n\tEdgeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat step_definitions.CommonHooks.setup(CommonHooks.java:16)\r\n",
+              "status": "failed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.setup()"
+            }
+          }
+        ],
+        "line": 52,
+=======
+        "line": 34,
+>>>>>>> main
+        "name": "As a user, I am able to add a item successfully",
+        "description": "",
+        "id": "item-functionality-management;as-a-user--i-am-able-to-add-a-item-successfully",
+        "after": [
+          {
+            "result": {
+<<<<<<< HEAD
+              "error_message": "java.lang.Error: Unresolved compilation problems: \n\tFirefoxDriverManager cannot be resolved\n\tEdgeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat step_definitions.CommonHooks.teardown(CommonHooks.java:24)\r\n",
+=======
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d112.0.5615.138)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-552TM191\u0027, ip: \u002710.0.0.160\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.15\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\\Users\\serge\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50347}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: fe6e090810ce9f38867ea78df72c9a62\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)\r\n\tat step_definitions.CommonHooks.teardown(CommonHooks.java:24)\r\n",
+              "duration": 129757700,
+>>>>>>> main
+              "status": "failed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+<<<<<<< HEAD
+=======
               "duration": 4998800,
+>>>>>>> main
               "status": "skipped"
             },
             "line": 35,
@@ -82,7 +462,10 @@
           },
           {
             "result": {
+<<<<<<< HEAD
+=======
               "duration": 1002000,
+>>>>>>> main
               "status": "skipped"
             },
             "line": 36,
@@ -134,7 +517,10 @@
           },
           {
             "result": {
+<<<<<<< HEAD
+=======
               "duration": 11004500,
+>>>>>>> main
               "status": "skipped"
             },
             "line": 39,
@@ -146,7 +532,10 @@
           },
           {
             "result": {
+<<<<<<< HEAD
+=======
               "duration": 509700,
+>>>>>>> main
               "status": "skipped"
             },
             "line": 40,
@@ -173,6 +562,862 @@
             "name": "@itemTests"
           },
           {
+<<<<<<< HEAD
+            "name": "@Regression"
+          },
+          {
+            "name": "@ValidCreateItem"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "As an enrity user, I am logged in",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.as_an_enrity_user_i_am_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I navigate to Items tab",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_navigate_to_items_tab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-07T02:56:25.691Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.Error: Unresolved compilation problems: \n\tFirefoxDriverManager cannot be resolved\n\tEdgeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat step_definitions.CommonHooks.setup(CommonHooks.java:16)\r\n",
+              "duration": 1315800,
+              "status": "failed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.setup()"
+            }
+          }
+        ],
+        "line": 62,
+        "name": "As a user, I am unable to create an item with empty name field",
+        "description": "",
+        "id": "item-functionality-management;as-a-user--i-am-unable-to-create-an-item-with-empty-name-field",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.Error: Unresolved compilation problems: \n\tFirefoxDriverManager cannot be resolved\n\tEdgeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat step_definitions.CommonHooks.teardown(CommonHooks.java:24)\r\n",
+              "duration": 1313400,
+              "status": "failed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 63,
+            "name": "I click on Add Item button",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_add_item_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 64,
+            "name": "I should be on New Item page",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_be_on_new_item_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1505800,
+              "status": "skipped"
+            },
+            "line": 65,
+            "name": "I leave the name fild blank",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_leave_the_name_fild_blank()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 66,
+            "name": "I click Save Item button",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_save_item_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 67,
+            "name": "I should see field is required error message",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_field_is_required_error_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 996500,
+              "status": "skipped"
+            },
+            "line": 68,
+            "name": "I should still be New Item page",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_still_be_new_item_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ItemTests"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@BlankNameFieldforCreateItem"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "As an enrity user, I am logged in",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.as_an_enrity_user_i_am_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 136600,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I navigate to Items tab",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_navigate_to_items_tab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-07T02:56:25.732Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.Error: Unresolved compilation problems: \n\tFirefoxDriverManager cannot be resolved\n\tEdgeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat step_definitions.CommonHooks.setup(CommonHooks.java:16)\r\n",
+              "duration": 999000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.setup()"
+            }
+          }
+        ],
+        "line": 71,
+        "name": "As a user, I am unable to create an item with less than three character",
+        "description": "",
+        "id": "item-functionality-management;as-a-user--i-am-unable-to-create-an-item-with-less-than-three-character",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.Error: Unresolved compilation problems: \n\tFirefoxDriverManager cannot be resolved\n\tEdgeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat step_definitions.CommonHooks.teardown(CommonHooks.java:24)\r\n",
+              "status": "failed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000100,
+              "status": "skipped"
+            },
+            "line": 72,
+            "name": "I click on Add Item button",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_add_item_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 73,
+            "name": "I should be on New Item page",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_be_on_new_item_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1001200,
+              "status": "skipped"
+            },
+            "line": 74,
+            "name": "I enter name as \"AZ\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AZ\"",
+                  "offset": 16
+                }
+              ],
+              "location": "step_definitions.ItemsManagementSteps.i_enter_name_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 75,
+            "name": "I click Save Item button",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_save_item_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 995000,
+              "status": "skipped"
+            },
+            "line": 76,
+            "name": "I should see atleast three letters required error message",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_atleast_three_letters_required_error_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 77,
+            "name": "I should still be New Item page",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_still_be_new_item_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ItemTests"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@InvalidNameFieldforCreateItem"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "As an enrity user, I am logged in",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.as_an_enrity_user_i_am_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I navigate to Items tab",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_navigate_to_items_tab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-07T02:56:25.771Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.Error: Unresolved compilation problems: \n\tFirefoxDriverManager cannot be resolved\n\tEdgeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat step_definitions.CommonHooks.setup(CommonHooks.java:16)\r\n",
+              "duration": 4507900,
+              "status": "failed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.setup()"
+            }
+          }
+        ],
+        "line": 80,
+        "name": "As a user, I am able to filter using item Name",
+        "description": "",
+        "id": "item-functionality-management;as-a-user--i-am-able-to-filter-using-item-name",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.Error: Unresolved compilation problems: \n\tFirefoxDriverManager cannot be resolved\n\tEdgeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat step_definitions.CommonHooks.teardown(CommonHooks.java:24)\r\n",
+              "duration": 1000300,
+              "status": "failed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 81,
+            "name": "I click on Filter Icon",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_filter_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 82,
+            "name": "I should see Name, Unit, Price boxes",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_name_unit_price_boxes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 83,
+            "name": "I should see Clear All link",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_clear_all_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 84,
+            "name": "I type a name \"iphone609\" in the Name text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"iphone609\"",
+                  "offset": 14
+                }
+              ],
+              "location": "step_definitions.ItemsManagementSteps.i_type_a_name_in_the_name_text_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 85,
+            "name": "I should get item matching the name",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_get_item_matching_the_name()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 86,
+            "name": "I click on the ‘Clear All’ link",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_the_clear_all_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 87,
+            "name": "the application will display the current list of items",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.the_application_will_display_the_current_list_of_items()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 88,
+            "name": "I click on Filter Icon",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_filter_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 89,
+            "name": "I should see the name, unit, price, and clear all options disapear",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_the_name_unit_price_and_clear_all_options_disapear()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ItemTests"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@FilterNameCreateItem"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1026700,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "As an enrity user, I am logged in",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.as_an_enrity_user_i_am_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I navigate to Items tab",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_navigate_to_items_tab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-07T02:56:25.802Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.Error: Unresolved compilation problems: \n\tFirefoxDriverManager cannot be resolved\n\tEdgeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat step_definitions.CommonHooks.setup(CommonHooks.java:16)\r\n",
+              "status": "failed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.setup()"
+            }
+          }
+        ],
+        "line": 92,
+        "name": "As a user, I am able to filter using item unit",
+        "description": "",
+        "id": "item-functionality-management;as-a-user--i-am-able-to-filter-using-item-unit",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.Error: Unresolved compilation problems: \n\tFirefoxDriverManager cannot be resolved\n\tEdgeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat step_definitions.CommonHooks.teardown(CommonHooks.java:24)\r\n",
+              "status": "failed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 93,
+            "name": "I click on Filter Icon",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_filter_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 94,
+            "name": "I should see Name, Unit, Price boxes",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_name_unit_price_boxes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 95,
+            "name": "I should see Clear All link",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_clear_all_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 96,
+            "name": "I type a \"ton\" in the unit text box and click on it",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ton\"",
+                  "offset": 9
+                }
+              ],
+              "location": "step_definitions.ItemsManagementSteps.i_type_a_in_the_unit_text_box_and_click_on_it(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 97,
+            "name": "I should get item matching the unit with name \"iphone777\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"iphone777\"",
+                  "offset": 46
+                }
+              ],
+              "location": "step_definitions.ItemsManagementSteps.i_should_get_item_matching_the_unit(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 98,
+            "name": "I click on the ‘Clear All’ link",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_the_clear_all_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 99,
+            "name": "the application will display the current list of items",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.the_application_will_display_the_current_list_of_items()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 100,
+            "name": "I click on Filter Icon",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_filter_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 101,
+            "name": "I should see the name, unit, price, and clear all options disapear",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_the_name_unit_price_and_clear_all_options_disapear()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ItemTests"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@FilterUnitCreateItem"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "As an enrity user, I am logged in",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.as_an_enrity_user_i_am_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I navigate to Items tab",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_navigate_to_items_tab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-07T02:56:25.829Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.Error: Unresolved compilation problems: \n\tFirefoxDriverManager cannot be resolved\n\tEdgeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat step_definitions.CommonHooks.setup(CommonHooks.java:16)\r\n",
+              "duration": 1993400,
+              "status": "failed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.setup()"
+            }
+          }
+        ],
+        "line": 105,
+        "name": "As a user, I am able to filter using item price",
+        "description": "",
+        "id": "item-functionality-management;as-a-user--i-am-able-to-filter-using-item-price",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.Error: Unresolved compilation problems: \n\tFirefoxDriverManager cannot be resolved\n\tEdgeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat step_definitions.CommonHooks.teardown(CommonHooks.java:24)\r\n",
+              "status": "failed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 106,
+            "name": "I click on Filter Icon",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_filter_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 107,
+            "name": "I should see Name, Unit, Price boxes",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_name_unit_price_boxes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 108,
+            "name": "I should see Clear All link",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_clear_all_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 109,
+            "name": "I type a name \"ashxxhegfhdgsf\" in the Name text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ashxxhegfhdgsf\"",
+                  "offset": 14
+                }
+              ],
+              "location": "step_definitions.ItemsManagementSteps.i_type_a_name_in_the_name_text_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 110,
+            "name": "I should no result found message",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_no_result_found_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 111,
+            "name": "I click on the ‘Clear All’ link",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_the_clear_all_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 112,
+            "name": "the application will display the current list of items",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.the_application_will_display_the_current_list_of_items()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 113,
+            "name": "I click on Filter Icon",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_click_on_filter_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 114,
+            "name": "I should see the name, unit, price, and clear all options disapear",
+            "match": {
+              "location": "step_definitions.ItemsManagementSteps.i_should_see_the_name_unit_price_and_clear_all_options_disapear()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ItemTests"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@NoResultFilterCreateItem"
+=======
             "name": "@regression"
           },
           {
@@ -180,6 +1425,7 @@
           },
           {
             "name": "@smokeTest"
+>>>>>>> main
           }
         ]
       }
@@ -191,10 +1437,17 @@
     "uri": "file:src/test/resources/features/itemsManagement.feature",
     "tags": [
       {
+<<<<<<< HEAD
+        "name": "@ItemTests",
+        "type": "Tag",
+        "location": {
+          "line": 19,
+=======
         "name": "@itemTests",
         "type": "Tag",
         "location": {
           "line": 1,
+>>>>>>> main
           "column": 1
         }
       },
@@ -202,7 +1455,11 @@
         "name": "@regression",
         "type": "Tag",
         "location": {
+<<<<<<< HEAD
+          "line": 19,
+=======
           "line": 1,
+>>>>>>> main
           "column": 12
         }
       }

@@ -2,8 +2,9 @@
 Feature: Crater Forgot Password
 
   Background: 
-    Given I am crater user, I navigate to the Login screen
+    Given I am crater user, I navigate to the “Prime Tech Invoice Application” login page
     And I click on the Forget Password? Link
+    And I click on the login button
 
   @forgotPasswordLink
   Scenario: As a user, i should be able to click on the forget password link
@@ -39,3 +40,4 @@ Feature: Crater Forgot Password
     Then I navigate to my gmail and click on the reset password link in my gmail
     Then I should be directed to a new page with Email, Password, Retype Password
     And i enter invalid "craterusertesting@gmail.com" "Password1234@" and "Password1234@" and i should see error message
+
