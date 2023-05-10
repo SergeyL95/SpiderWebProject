@@ -1,9 +1,16 @@
 [
   {
+<<<<<<< HEAD
     "line": 20,
     "elements": [
       {
         "line": 22,
+=======
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+>>>>>>> main
         "name": "",
         "description": "",
         "type": "background",
@@ -11,10 +18,16 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 996500,
               "status": "skipped"
+=======
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d112.0.5615.138)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-552TM191\u0027, ip: \u002710.0.0.160\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.15\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\\Users\\serge\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50347}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: fe6e090810ce9f38867ea78df72c9a62\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\r\n\tat pages.LogInPage.login(LogInPage.java:76)\r\n\tat step_definitions.ItemsManagementSteps.as_an_enrity_user_i_am_logged_in(ItemsManagementSteps.java:40)\r\n\tat ✽.As an enrity user, I am logged in(file:///C:/Users/serge/SpiderWebProject/./src/test/resources/features/itemsManagement.feature:5)\r\n",
+              "duration": 4665672700,
+              "status": "failed"
+>>>>>>> main
             },
-            "line": 23,
+            "line": 5,
             "name": "As an enrity user, I am logged in",
             "match": {
               "location": "step_definitions.ItemsManagementSteps.as_an_enrity_user_i_am_logged_in()"
@@ -23,6 +36,7 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "status": "skipped"
             },
             "line": 24,
@@ -258,6 +272,12 @@
               "status": "skipped"
             },
             "line": 24,
+=======
+              "duration": 1508500,
+              "status": "skipped"
+            },
+            "line": 6,
+>>>>>>> main
             "name": "I navigate to Items tab",
             "match": {
               "location": "step_definitions.ItemsManagementSteps.i_navigate_to_items_tab()"
@@ -267,18 +287,28 @@
         ]
       },
       {
+<<<<<<< HEAD
         "start_timestamp": "2023-05-07T02:56:25.594Z",
         "before": [
           {
             "result": {
               "error_message": "java.lang.Error: Unresolved compilation problems: \n\tFirefoxDriverManager cannot be resolved\n\tEdgeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat step_definitions.CommonHooks.setup(CommonHooks.java:16)\r\n",
               "status": "failed"
+=======
+        "start_timestamp": "2023-05-07T17:41:37.540Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6666346000,
+              "status": "passed"
+>>>>>>> main
             },
             "match": {
               "location": "step_definitions.CommonHooks.setup()"
             }
           }
         ],
+<<<<<<< HEAD
         "line": 45,
         "name": "As a user, I am able to see UI components on New Item page",
         "description": "",
@@ -390,13 +420,21 @@
           }
         ],
         "line": 52,
+=======
+        "line": 34,
+>>>>>>> main
         "name": "As a user, I am able to add a item successfully",
         "description": "",
         "id": "item-functionality-management;as-a-user--i-am-able-to-add-a-item-successfully",
         "after": [
           {
             "result": {
+<<<<<<< HEAD
               "error_message": "java.lang.Error: Unresolved compilation problems: \n\tFirefoxDriverManager cannot be resolved\n\tEdgeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\tChromeDriverManager cannot be resolved\n\r\n\tat utilities.Driver.getDriver(Driver.java:29)\r\n\tat step_definitions.CommonHooks.teardown(CommonHooks.java:24)\r\n",
+=======
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d112.0.5615.138)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-552TM191\u0027, ip: \u002710.0.0.160\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.15\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\\Users\\serge\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50347}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: fe6e090810ce9f38867ea78df72c9a62\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)\r\n\tat step_definitions.CommonHooks.teardown(CommonHooks.java:24)\r\n",
+              "duration": 129757700,
+>>>>>>> main
               "status": "failed"
             },
             "match": {
@@ -409,9 +447,13 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
+=======
+              "duration": 4998800,
+>>>>>>> main
               "status": "skipped"
             },
-            "line": 53,
+            "line": 35,
             "name": "I click on Add Item button",
             "match": {
               "location": "step_definitions.ItemsManagementSteps.i_click_on_add_item_button()"
@@ -420,9 +462,13 @@
           },
           {
             "result": {
+<<<<<<< HEAD
+=======
+              "duration": 1002000,
+>>>>>>> main
               "status": "skipped"
             },
-            "line": 54,
+            "line": 36,
             "name": "I should be on New Item page",
             "match": {
               "location": "step_definitions.ItemsManagementSteps.i_should_be_on_new_item_page()"
@@ -433,7 +479,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 55,
+            "line": 37,
             "name": "I provide item information name \"iphone\", price \"1800\", unit \"pc\", and description \"too many iphone\"",
             "match": {
               "arguments": [
@@ -462,7 +508,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 56,
+            "line": 38,
             "name": "I click Save Item button",
             "match": {
               "location": "step_definitions.ItemsManagementSteps.i_click_save_item_button()"
@@ -471,9 +517,13 @@
           },
           {
             "result": {
+<<<<<<< HEAD
+=======
+              "duration": 11004500,
+>>>>>>> main
               "status": "skipped"
             },
-            "line": 57,
+            "line": 39,
             "name": "I should see a flash message success",
             "match": {
               "location": "step_definitions.ItemsManagementSteps.i_should_see_a_flash_message_success()"
@@ -482,9 +532,13 @@
           },
           {
             "result": {
+<<<<<<< HEAD
+=======
+              "duration": 509700,
+>>>>>>> main
               "status": "skipped"
             },
-            "line": 58,
+            "line": 40,
             "name": "The Item is added to the Item list table",
             "match": {
               "location": "step_definitions.ItemsManagementSteps.the_item_is_added_to_the_item_list_table()"
@@ -495,7 +549,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 59,
+            "line": 41,
             "name": "I should be able to see the item in database",
             "match": {
               "location": "step_definitions.ItemsManagementSteps.i_should_be_able_to_see_the_item_in_database()"
@@ -505,9 +559,10 @@
         ],
         "tags": [
           {
-            "name": "@ItemTests"
+            "name": "@itemTests"
           },
           {
+<<<<<<< HEAD
             "name": "@Regression"
           },
           {
@@ -1362,6 +1417,15 @@
           },
           {
             "name": "@NoResultFilterCreateItem"
+=======
+            "name": "@regression"
+          },
+          {
+            "name": "@validCreateItem"
+          },
+          {
+            "name": "@smokeTest"
+>>>>>>> main
           }
         ]
       }
@@ -1373,18 +1437,29 @@
     "uri": "file:src/test/resources/features/itemsManagement.feature",
     "tags": [
       {
+<<<<<<< HEAD
         "name": "@ItemTests",
         "type": "Tag",
         "location": {
           "line": 19,
+=======
+        "name": "@itemTests",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+>>>>>>> main
           "column": 1
         }
       },
       {
-        "name": "@Regression",
+        "name": "@regression",
         "type": "Tag",
         "location": {
+<<<<<<< HEAD
           "line": 19,
+=======
+          "line": 1,
+>>>>>>> main
           "column": 12
         }
       }

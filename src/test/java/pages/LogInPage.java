@@ -67,8 +67,19 @@ public class LogInPage {
 	@FindBy (xpath = "//tr[@class='zA yO x7']")
 	public WebElement resetPasswordNotificationOnGmail;
 	
+
 	@FindBy (xpath = "//div[@class='w-full']//*[name()='svg'][1]")
 	public WebElement textCraterOnTheLoginPage;
+
+	@FindBy (xpath = "//div[contains(text(), \"Email \")]")
+	public WebElement resetPageEmail;
+	
+	@FindBy (xpath = "//div[contains(text(), \"Password \")]")
+	public WebElement resetPagePassword;
+	
+	@FindBy (xpath = "//div[contains(text(), \"Retype Password \")]")
+	public WebElement resetPageReTypePassword;
+
 	
 	@FindBy (xpath = "//p[contains(text(),'Copyright @ Crater Invoice, Inc. 2023')]")
 	public WebElement textCopyright;
