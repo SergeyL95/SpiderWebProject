@@ -1,29 +1,11 @@
-#Author: your.email@your.domain.com
-#Keywords Summary :
-#Feature: List of scenarios.
-#Scenario: Business rule through list of steps with arguments.
-#Given: Some precondition step
-#When: Some key actions
-#Then: To observe outcomes or validation
-#And,But: To enumerate more Given,When,Then steps
-#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
-#Examples: Container for s table
-#Background: List of steps run before each of the scenarios
-#""" (Doc Strings)
-#| (Data Tables)
-#@ (Tags/Labels):To group Scenarios
-#<> (placeholder)
-#""
-## (Comments)
-#Sample Feature Definition Template
-@ItemTests @Regression
+@itemTests @regression
 Feature: Item Functionality Management
   
   Background: 
   Given As an enrity user, I am logged in
 	And I navigate to Items tab
 	  
-  @VerifyUIComponentsOnItemsPage
+  @verifyUIComponentsOnItemsPage
   Scenario: As a user, I am able to see UI components on Items Page
      Then I should be navigated to a page titled Items
      And I should see the menu navigation path as Home Items placed under Items
@@ -41,14 +23,14 @@ Feature: Item Functionality Management
      Then I should navigate to previous page
 
     
-  @VerifyAddaItemUIcomponents
+  @verifyAddaItemUIcomponents
   Scenario: As a user, I am able to see UI components on New Item page
  		 When I click on Add Item button
  		 Then I should be on New Item page
 		 And I should see fields Name, Price, Unit, Description
  	
   
-  @ValidCreateItem  @SmokeTest
+  @validCreateItem  @smokeTest
   Scenario: As a user, I am able to add a item successfully
      When I click on Add Item button
  		 Then I should be on New Item page
@@ -58,7 +40,7 @@ Feature: Item Functionality Management
      And The Item is added to the Item list table
      And I should be able to see the item in database
 	
-	@BlankNameFieldforCreateItem
+	@blankNameFieldforCreateItem
   Scenario: As a user, I am unable to create an item with empty name field
      When I click on Add Item button
  		 Then I should be on New Item page
@@ -67,7 +49,7 @@ Feature: Item Functionality Management
  		 Then I should see field is required error message
  		 And I should still be New Item page
  	
- 	@InvalidNameFieldforCreateItem
+ 	@invalidNameFieldforCreateItem
  	Scenario: As a user, I am unable to create an item with less than three character
  		 When I click on Add Item button
  		 Then I should be on New Item page
@@ -76,7 +58,7 @@ Feature: Item Functionality Management
  	 	 Then I should see atleast three letters required error message
  		 And I should still be New Item page
  	
-  @FilterNameCreateItem
+  @filterNameCreateItem
  	Scenario: As a user, I am able to filter using item Name 
  		When I click on Filter Icon
  		Then I should see Name, Unit, Price boxes 
@@ -88,7 +70,7 @@ Feature: Item Functionality Management
  		When I click on Filter Icon
  		Then I should see the name, unit, price, and clear all options disapear
  	
- 	@FilterUnitCreateItem
+ 	@filterUnitCreateItem
  	Scenario: As a user, I am able to filter using item unit
  		When I click on Filter Icon
  		Then I should see Name, Unit, Price boxes 
@@ -101,7 +83,7 @@ Feature: Item Functionality Management
  		Then I should see the name, unit, price, and clear all options disapear
  		
  		
- 	@NoResultFilterCreateItem
+ 	@noResultFilterCreateItem
  	Scenario: As a user, I am able to filter using item price
  		When I click on Filter Icon
  		Then I should see Name, Unit, Price boxes 
