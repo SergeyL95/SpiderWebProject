@@ -1,96 +1,82 @@
-@itemTests @regression
+@regression
 Feature: Item Functionality Management
-  
-  Background: 
-  Given As an enrity user, I am logged in
-	And I navigate to Items tab
-	  
-  @verifyUIComponentsOnItemsPage
-  Scenario: As a user, I am able to see UI components on Items Page
-     Then I should be navigated to a page titled Items
-     And I should see the menu navigation path as Home Items placed under Items
-     And I should see a secondary button titled Filter
-     And I should see a primary button titled Add Item
-     And I should see a table with select all checkbox, NAME, UNIT, PRICE, ADDED ON
-     And A link icon showing three dots
-     When I click on a link icon with three dots
-     Then I should see Edit with an edit icon
-     And I should see Delete with a delete icon
-     And Verify the pagination text at the bottom of the page
-     When I click on right arrow navigation
-     Then I should navigate to the next page 
-     When I click on left arrow navigation
-     Then I should navigate to previous page
 
-    
-  @verifyAddaItemUIcomponents
-  Scenario: As a user, I am able to see UI components on New Item page
- 		 When I click on Add Item button
- 		 Then I should be on New Item page
-		 And I should see fields Name, Price, Unit, Description
- 	
+  Background: 
+    Given As an entity user, I am logged in
+    And I navigate to Items tab
+
+  @createItemsFP
+  Scenario Outline: As a user, I am able to create an item or a service
+    When I click on the Add Item button
+    Then I should be on item input page
+    When I provide item information "<name>", "<price>", "<unit>", and "<description>"
+    And I click Save Item button
+    Then The Item is added to the Item list table
+
+    Examples: 
+      | name         | price | unit | description    |
+      | Atomic Habit |  1899 | pc   | A novel        |
+      | T-shirt      |  1299 | pc   | A cotton shirt |
+      | Mug          |  2000 | pc   | A coffee mug   |
+      | Apple EarPods|  3500 | pc   | A good one     |
+  @populationOfAddItemsTable @SmokeTest
+  Scenario: As a user, I am able to update an item or a service
+    And I click on the more icon represented by three dots for a given item
+    And I click on edit
+    Then I should be directed to the Edit Item page
+    #And I should be able to select "Atomic Habit"
+    And I update the item to 50000 dollars
+    When I click on the update item button
+    Then the Item price is updated to 50000 dollars
+    Then I should see a flash message "Success! Item updated successfully" with a close button to the right
+    And the flash message should disappear within 5 seconds or less
+    And I should be directed to the Items Page
+    And I should be able to view that the item is updated within the items table
+    And the application database should be updated with the Edits made by me for the respective item
+
+  @Editinganitem
+  Scenario: Editing an item
+    When I click on edit
+    Then I should be directed to the Edit Item page.
+    When I select the item "Apple EarPods"
+    And I should be on item details page
+    When I update the item  to 25000 dollars
+    And I click Update Item button
+    Then the Item price is updated to 25000 dollars
+    When I click on the ‘Update Item’ button then
+    Then I should see a flash message with the text "Success! Item updated successfully" and a close button to the right
+    And the flash message should disappear within 5 seconds or less
+    And I should be directed to the Items Page
+    And I should be able to view that the item is updated within the items table
+    And The application database should be updated with the Edits made by the user for the respective item\
+
+  @Deletinganitem
+  Scenario: Deleting an item
+    When I click on Delete
+    Then I should be prompted with the Modal
+    And the Modal Title should be Alert Icon "Are you sure?"
+    And the Modal Message should be "You will not be able to recover this item"
+    And the Modal should have a Button-1 with text ‘Ok'
+    And the Modal should have a Button-2 with text ‘Cancel'
+    When I click on "Cancel" or anywhere on the page
+    Then the alert modal should be closed
+    When I click on "Ok"
+    Then I should see a flash message with the text "Success! Item deleted successfully" and a close button to the right
+    And the user can close the flash message by clicking on the "X" button
+    And I should be directed to the items table
+    And the item should not be visible within the table
+    And the item’s record should be deleted from the application database
+
+  @DeleteItem-MultipleDeletion
+  Scenario: Delete Item - Multiple Deletion
+    And I should be able to view all the item fields
+    And I should be able to edit all the item fields
+    And The application should perform the validations for each respective field
+    When I click on the "Update Item" button
+    Then I should see a flash message with the text "Success! Item updated successfully" and a close button to the right
+    And the flash message should disappear within 5 seconds or less
+    And I should be directed to the Items Page
+    And I should be able to view that the item is updated within the items table
+    And the application database should be updated with the Edits made by the user for the respective item
+
   
-  @validCreateItem  @smokeTest
-  Scenario: As a user, I am able to add a item successfully
-     When I click on Add Item button
- 		 Then I should be on New Item page
-		 When I provide item information name "iphone", price "1800", unit "pc", and description "too many iphone"
-		 And I click Save Item button
-		 Then I should see a flash message success 
-     And The Item is added to the Item list table
-     And I should be able to see the item in database
-	
-	@blankNameFieldforCreateItem
-  Scenario: As a user, I am unable to create an item with empty name field
-     When I click on Add Item button
- 		 Then I should be on New Item page
- 		 When I leave the name fild blank
- 		 And I click Save Item button
- 		 Then I should see field is required error message
- 		 And I should still be New Item page
- 	
- 	@invalidNameFieldforCreateItem
- 	Scenario: As a user, I am unable to create an item with less than three character
- 		 When I click on Add Item button
- 		 Then I should be on New Item page
- 		 When I enter name as "AZ" 
- 		 And I click Save Item button
- 	 	 Then I should see atleast three letters required error message
- 		 And I should still be New Item page
- 	
-  @filterNameCreateItem
- 	Scenario: As a user, I am able to filter using item Name 
- 		When I click on Filter Icon
- 		Then I should see Name, Unit, Price boxes 
- 		And I should see Clear All link
- 		When I type a name "iphone609" in the Name text box
- 		Then I should get item matching the name
- 		When I click on the ‘Clear All’ link
- 		Then the application will display the current list of items
- 		When I click on Filter Icon
- 		Then I should see the name, unit, price, and clear all options disapear
- 	
- 	@filterUnitCreateItem
- 	Scenario: As a user, I am able to filter using item unit
- 		When I click on Filter Icon
- 		Then I should see Name, Unit, Price boxes 
- 		And I should see Clear All link
- 		When I type a "ton" in the unit text box and click on it
- 		Then I should get item matching the unit with name "iphone777"
- 		When I click on the ‘Clear All’ link
- 		Then the application will display the current list of items
- 		When I click on Filter Icon
- 		Then I should see the name, unit, price, and clear all options disapear
- 		
- 		
- 	@noResultFilterCreateItem
- 	Scenario: As a user, I am able to filter using item price
- 		When I click on Filter Icon
- 		Then I should see Name, Unit, Price boxes 
- 		And I should see Clear All link
- 		When I type a name "ashxxhegfhdgsf" in the Name text box
- 		Then I should no result found message
- 		When I click on the ‘Clear All’ link
- 		Then the application will display the current list of items
- 		When I click on Filter Icon
- 		Then I should see the name, unit, price, and clear all options disapear

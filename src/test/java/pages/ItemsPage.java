@@ -42,6 +42,8 @@ public class ItemsPage {
 	@FindBy(xpath = "//th[text()='Price ']")
 	public WebElement itemsPageTablePriceHeadingText;
 	
+	@FindBy(xpath = "//input[@id='0']")
+	public WebElement itemsPriceField;
 	@FindBy(xpath = "//th[text()='Added On ']")
 	public WebElement itemsPageAddedOnHeadingText;
 	

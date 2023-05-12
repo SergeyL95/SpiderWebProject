@@ -12,9 +12,8 @@ public class CraterCommonPage {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 	
-	@FindBy (partialLinkText ="Items")
+	@FindBy (xpath = "//a[text()=' Items']")
 	public WebElement itemsLink;
-	
 	
 	
 }
