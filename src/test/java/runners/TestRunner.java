@@ -12,8 +12,9 @@ import io.cucumber.junit.CucumberOptions;
 				"json:test_results/cucumber_report.json"},
 		features="./src/test/resources/features",
 		glue="step_definitions",
-		tags="@populationOfAddItemsTable",
-		publish=true
+		tags="@itemsTestsS",
+        publish=true
+		
 		)
 
 public class TestRunner {

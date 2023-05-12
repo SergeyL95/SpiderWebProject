@@ -14,7 +14,7 @@ public class LogInPage {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 	
-	BrowserUtils utils = new BrowserUtils();
+BrowserUtils utils = new BrowserUtils();
 	
 	@FindBy (name = "email")
 	public WebElement emailField;
@@ -67,7 +67,17 @@ public class LogInPage {
 	@FindBy (xpath = "//tr[@class='zA yO x7']")
 	public WebElement resetPasswordNotificationOnGmail;
 	
+	@FindBy (xpath = "//div[contains(text(), \"Email \")]")
+	public WebElement resetPageEmail;
 	
+	@FindBy (xpath = "//div[contains(text(), \"Password \")]")
+	public WebElement resetPagePassword;
+	
+	@FindBy (xpath = "//div[contains(text(), \"Retype Password \")]")
+	public WebElement resetPageReTypePassword;
+	
+	@FindBy (xpath = "//input[@name='email']")
+	public WebElement resetpasswordemail;
 	
 	
 	public void login() {

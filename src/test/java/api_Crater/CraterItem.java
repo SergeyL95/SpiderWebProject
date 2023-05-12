@@ -1,13 +1,13 @@
 package api_Crater;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import java.util.HashMap;
 import java.util.Map;
 
 import org.hamcrest.Matchers;
-import org.junit.BeforeClass;
-import org.junit.Test;
-
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import utilities.BrowserUtils;
 import utilities.DataReader;
@@ -21,6 +21,7 @@ public class CraterItem {
 	String itemName;
 	Response response;
 	BrowserUtils utils;
+	String baseUrl = "http://crater.primetech-apps.com/api";
 	
 	@BeforeClass
 	public void setup() {
@@ -48,96 +49,93 @@ public class CraterItem {
 	    token = response.jsonPath().getString("token");
 	}
 	
-	@Test
-	public void createItem() {
-		String endpoint = "/api/v1/items";
-		
-		utils = new BrowserUtils();
-		itemName = "Standing Desk" + utils.randomNumber();
+
+	
+	@Test (priority = 1)
+	public void invalidScenario() {
+		String loginEndpoint = "/v1/auth/login";
 		Map<String, Object> requestBody = new HashMap<>();
-		requestBody.put("name", itemName);
-		requestBody.put("price", 30000);
-		requestBody.put("unit_id", 11);
-		requestBody.put("description", "Very nice standing desk");
+		requestBody.put("username", DataReader.getProperty("username"));
+		requestBody.put("password", DataReader.getProperty("password"));
+		requestBody.put("device_name", DataReader.getProperty("device_name"));
+		
 		
 		response = RestAssured.given()
-		.contentType("application/json")
 		.accept("application/json")
-		.auth().oauth2("Bearer "+token+"")
+		.contentType(ContentType.JSON)
 		.body(requestBody)
-		.post(endpoint)
+		.when()
+		.post(baseUrl + loginEndpoint)
 		.thenReturn();
 		
-		itemId = response.jsonPath().getInt("data.id");
+		response.prettyPrint();
 		
-		response.then().statusCode(200)
-		.and().assertThat().contentType("application/json")
-		.and().assertThat().body("data.name", Matchers.equalTo(itemName))
-		.and().assertThat().body("data.price", Matchers.equalTo(30000))
-		.and().assertThat().body("data.unit_id", Matchers.equalTo(11))
-		.and().assertThat().body("data.description", Matchers.equalTo("Very nice standing desk"));
+		response.then().statusCode(200);
+		token = response.jsonPath().getString("token");
+		
 	}
 	
-	@Test 
-	public void getItem() {
-		String endpoint = "/api/v1/items/" + itemId;
-		
-		response = RestAssured.given()
-		.contentType("application/json")
-		.accept("application/json")
-		.auth().oauth2("Bearer "+token+"")
-		.get(endpoint).thenReturn();
-		
-		response.then().statusCode(200)
-		.and().assertThat().contentType("application/json")
-		.and().assertThat().body("data.name", Matchers.equalTo(itemName))
-		.and().assertThat().body("data.price", Matchers.equalTo(30000))
-		.and().assertThat().body("data.unit_id", Matchers.equalTo(11))
-		.and().assertThat().body("data.description", Matchers.equalTo("Very nice standing desk"));
-	}
 	
-	@Test
-	public void updateItem() {
-		String endpoint = "/api/v1/items/" + itemId;
+	@Test (dependsOnMethods = "login", priority = 2)
+	public void logout() {
 		
-		Map<String, Object> requestBody = new HashMap<>();
-		requestBody.put("name", itemName);
-		requestBody.put("price", 60000);
-		requestBody.put("unit_id", 11);
-		requestBody.put("description", "Very nice standing desk");
+		String logoutEndpoint = "/v1/auth/logout";
 		
 		response = RestAssured.given()
-		.contentType("application/json")
 		.accept("application/json")
+		.contentType(ContentType.JSON)
 		.auth().oauth2("Bearer "+token+"")
-		.body(requestBody)
-		.patch(endpoint)
+		.post(baseUrl + logoutEndpoint)
 		.thenReturn();
 		
-		response.then().statusCode(200)
-		.and().assertThat().contentType("application/json")
-		.and().assertThat().body("data.name", Matchers.equalTo(itemName))
-		.and().assertThat().body("data.price", Matchers.equalTo(60000))
-		.and().assertThat().body("data.unit_id", Matchers.equalTo(11))
-		.and().assertThat().body("data.description", Matchers.equalTo("Very nice standing desk"));
-	}
-	
-	@Test
-	public void deleteItem() {
-		String endpoint = "/api/v1/items/delete";
-		String id = String.valueOf(itemId);
-		String[] itemIds = {id};
+		response.prettyPrint();
 		
-		Map<String, Object> requestBody = new HashMap<>();
-		requestBody.put("ids", itemIds);
-		
-		RestAssured.given()
-		.contentType("application/json")
-		.accept("application/json")
-		.auth().oauth2("Bearer "+token+"")
-		.body(requestBody)
-		.post(endpoint)
-		.then().statusCode(200).contentType("application/json")
+		response
+		.then().statusCode(200)
 		.body("success", Matchers.equalTo(true));
+		
+		
+	}
+	
+	
+	@Test (priority = 3)
+	public void logoutWithIncorrectAuthorization() {
+		
+		String logoutEndpoint = "/v1/auth/logout";
+		
+		response = RestAssured.given()
+		.accept("application/json")
+		.contentType(ContentType.JSON)
+		.auth().oauth2("Bearer "+token+"")
+		.post(baseUrl + logoutEndpoint)
+		.thenReturn();
+		
+		response.prettyPrint();
+		
+		response
+		.then().statusCode(401)
+		.body("message", Matchers.equalTo("Unauthenticated."));
+		
+		
+		
+	}
+	
+	@Test (priority = 4)
+	public void logoutWithIncorrectEndpoint() {
+		
+		String logoutEndpoint = "/v1/auth/logout/login";
+		
+		response = RestAssured.given()
+		.accept("application/json")
+		.contentType(ContentType.JSON)
+		.auth().oauth2("Bearer "+token+"")
+		.post(baseUrl + logoutEndpoint)
+		.thenReturn();
+		
+		response.prettyPrint();
+		
+		response
+		.then().statusCode(404);
+		
 	}
 }

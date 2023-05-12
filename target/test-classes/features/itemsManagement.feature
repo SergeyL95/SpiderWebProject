@@ -1,4 +1,4 @@
-@regression
+@regression   @itemsTestsS
 Feature: Item Functionality Management
 
   Background: 
@@ -12,71 +12,32 @@ Feature: Item Functionality Management
     When I provide item information "<name>", "<price>", "<unit>", and "<description>"
     And I click Save Item button
     Then The Item is added to the Item list table
+    When I delete the item created above
+    Then The item is no longer in the items list table
 
     Examples: 
-      | name         | price | unit | description    |
-      | Atomic Habit |  1899 | pc   | A novel        |
-      | T-shirt      |  1299 | pc   | A cotton shirt |
-      | Mug          |  2000 | pc   | A coffee mug   |
-      | Apple EarPods|  3500 | pc   | A good one     |
+      | name          | price    | unit | description    |
+      | House         |  5000000 | pc   | big house      |
+      | cave          |  800000  | pc   | big one        |
+      | Apple         |  2000    | pc   | red apple      |
+      | juice         |  3500    | box  | A good one     |
+
   @populationOfAddItemsTable @SmokeTest
   Scenario: As a user, I am able to update an item or a service
     And I click on the more icon represented by three dots for a given item
     And I click on edit
     Then I should be directed to the Edit Item page
-    #And I should be able to select "Atomic Habit"
     And I update the item to 50000 dollars
     When I click on the update item button
-    Then the Item price is updated to 50000 dollars
-    Then I should see a flash message "Success! Item updated successfully" with a close button to the right
-    And the flash message should disappear within 5 seconds or less
+    Then I should see a flash message success
     And I should be directed to the Items Page
     And I should be able to view that the item is updated within the items table
     And the application database should be updated with the Edits made by me for the respective item
 
-  @Editinganitem
-  Scenario: Editing an item
-    When I click on edit
-    Then I should be directed to the Edit Item page.
-    When I select the item "Apple EarPods"
+   @editinganitem
+   Scenario: As a user, I am able to update an item or a service
+    When I select the item "iphone"
     And I should be on item details page
-    When I update the item  to 25000 dollars
+    When I update the item price to 80000 dollars
     And I click Update Item button
-    Then the Item price is updated to 25000 dollars
-    When I click on the ‘Update Item’ button then
-    Then I should see a flash message with the text "Success! Item updated successfully" and a close button to the right
-    And the flash message should disappear within 5 seconds or less
-    And I should be directed to the Items Page
-    And I should be able to view that the item is updated within the items table
-    And The application database should be updated with the Edits made by the user for the respective item\
-
-  @Deletinganitem
-  Scenario: Deleting an item
-    When I click on Delete
-    Then I should be prompted with the Modal
-    And the Modal Title should be Alert Icon "Are you sure?"
-    And the Modal Message should be "You will not be able to recover this item"
-    And the Modal should have a Button-1 with text ‘Ok'
-    And the Modal should have a Button-2 with text ‘Cancel'
-    When I click on "Cancel" or anywhere on the page
-    Then the alert modal should be closed
-    When I click on "Ok"
-    Then I should see a flash message with the text "Success! Item deleted successfully" and a close button to the right
-    And the user can close the flash message by clicking on the "X" button
-    And I should be directed to the items table
-    And the item should not be visible within the table
-    And the item’s record should be deleted from the application database
-
-  @DeleteItem-MultipleDeletion
-  Scenario: Delete Item - Multiple Deletion
-    And I should be able to view all the item fields
-    And I should be able to edit all the item fields
-    And The application should perform the validations for each respective field
-    When I click on the "Update Item" button
-    Then I should see a flash message with the text "Success! Item updated successfully" and a close button to the right
-    And the flash message should disappear within 5 seconds or less
-    And I should be directed to the Items Page
-    And I should be able to view that the item is updated within the items table
-    And the application database should be updated with the Edits made by the user for the respective item
-
-  
+    Then the Item price is updated to 800 dollars

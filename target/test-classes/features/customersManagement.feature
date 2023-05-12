@@ -1,7 +1,8 @@
-	@regression
+@regression
 	Feature: Customer Management
 	
 	Background:
+
     Given As a user, I am on the login page
     When I enter valid username and valid password
     And I click on login button

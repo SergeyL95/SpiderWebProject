@@ -161,10 +161,14 @@ public class ItemsPage {
 	@FindBy (xpath = "//span[text()='Name must have at least 3 letters.']")
 	public WebElement addItemPage3LettersRequiredMsg;
 	
-	
+	@FindBy (xpath = "//h3[@id='headlessui-dialog-title-80']")
+	public WebElement areYouSureMessage;
+    
+	@FindBy (xpath = "//div[@name='name']")
+	public WebElement filterNameBox;
 
-
-	
+	@FindBy (xpath ="button[type='submit']")
+	public WebElement savebutton;
     BrowserUtils utils = new BrowserUtils();
 	
 	public void createAnItem(String itemName, String itemPrice, String itemUnit, String itemDes) {
@@ -180,19 +184,29 @@ public class ItemsPage {
 	}
 	
 	
+
 	public void deleteAnItem(String name) throws InterruptedException {
-		filterButton.click();
-		utils.waitUntilElementVisible(filterPriceInputField);
-		utils.actionsSendKeys(filterPriceInputField, name);
+		if (!filterNameBox.isDisplayed()) {
+			Thread.sleep(10000);
+			utils.waitUntilElementToBeClickable(filterButton);
+			filterButton.click();
+			utils.waitUntilElementVisible(filterNameBox);
+			utils.actionsSendKeys(filterNameBox, name);
+		}
+		
 //		itemNameInTheItemsTable.findElement(
 //				By.xpath(String.format(itemNameInTheItemsTable.getAttribute("xpath"), name))).isDisplayed();
 		Assert.assertTrue(Driver.getDriver().findElement(By.xpath("//a[text()='"+name+"']")).isDisplayed());
-		utils.waitUntilElementVisible(filterItem3dot);
+		
+		utils.waitUntilElementToBeClickable(filterItem3dot);
 		Thread.sleep(2000);
-		filterItem3dot.click();
-		utils.waitUntilElementVisible(filter3dotDeleteBtn);
-		filter3dotDeleteBtn.click();
-		utils.waitUntilElementVisible(itemDeleteOkayBtn);
-		itemDeleteOkayBtn.click();
+		utils.actionsClick(filterItem3dot);
+		//filterItem3dot.click();
+		utils.waitUntilElementToBeClickable(filter3dotDeleteBtn);
+		utils.actionsClick(filter3dotDeleteBtn);
+		//filter3dotDeleteBtn.click();
+		utils.waitUntilElementToBeClickable(itemDeleteOkayBtn);
+		//itemDeleteOkayBtn.click();
+		utils.actionsClick(itemDeleteOkayBtn);
 	}
 }
