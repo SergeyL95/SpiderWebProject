@@ -11,6 +11,7 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 8987953000,
               "status": "passed"
             },
@@ -18,11 +19,21 @@
             "name": "I navigate to Customers tab",
             "match": {
               "location": "step_definitions.CustomersManagementSteps.i_navigate_to_customers_tab()"
+=======
+              "duration": 948168400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am crater user, I navigate to the “Prime Tech Invoice Application” login page",
+            "match": {
+              "location": "step_definitions.LoginUIPage.i_am_crater_user_i_navigate_to_the_prime_tech_invoice_application_login_page()"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
             },
             "keyword": "Given "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 305397000,
               "status": "passed"
             },
@@ -30,17 +41,46 @@
             "name": "Validate I am on the Customers page (Header)",
             "match": {
               "location": "step_definitions.CustomersManagementSteps.validate_i_am_on_the_customers_page_header()"
+=======
+              "duration": 168529100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the Forget Password? Link",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_click_on_the_forget_password_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1001300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on the login button",
+            "match": {
+              "location": "step_definitions.LoginUIPage.i_click_on_the_login_button()"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
             },
             "keyword": "Then "
           }
         ]
       },
       {
+<<<<<<< HEAD
         "start_timestamp": "2023-05-12T17:30:50.924Z",
         "before": [
           {
             "result": {
               "duration": 3308934000,
+=======
+        "start_timestamp": "2023-05-11T02:43:03.684Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1810319500,
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
               "status": "passed"
             },
             "match": {
@@ -48,6 +88,7 @@
             }
           }
         ],
+<<<<<<< HEAD
         "line": 9,
         "name": "As a user, I am able to create a customer and manage customer",
         "description": "",
@@ -56,6 +97,16 @@
           {
             "result": {
               "duration": 150960000,
+=======
+        "line": 10,
+        "name": "As a user, i should be able to click on the forget password link",
+        "description": "",
+        "id": "crater-forgot-password;as-a-user--i-should-be-able-to-click-on-the-forget-password-link",
+        "after": [
+          {
+            "result": {
+              "duration": 196534900,
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
               "status": "passed"
             },
             "match": {
@@ -68,6 +119,7 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1673413000,
               "status": "passed"
             },
@@ -75,10 +127,34 @@
             "name": "I should be able to see button titled Filter with a filter Icon",
             "match": {
               "location": "step_definitions.CustomersManagementSteps.i_should_be_able_to_see_button_titled_filter_with_a_filter_icon()"
+=======
+              "duration": 9501500,
+              "status": "passed"
             },
-            "keyword": "And "
+            "line": 11,
+            "name": "I should be directed to a new page",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_should_be_directed_to_a_new_page()"
+            },
+            "keyword": "Then "
           },
           {
+            "result": {
+              "duration": 117021100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should see text box titled Enter email, Send Reset Link, Back to Login",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_should_see_text_box_titled_enter_email_send_reset_link_back_to_login()"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+<<<<<<< HEAD
             "result": {
               "duration": 46044000,
               "status": "passed"
@@ -101,9 +177,28 @@
               "location": "step_definitions.CustomersManagementSteps.i_should_be_able_to_see_these_columns_select_all_checkbox_name_phone_amount_due_added_on()"
             },
             "keyword": "And "
+=======
+            "name": "@forgotPassword"
           },
           {
+            "name": "@regressionn"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
+          },
+          {
+            "name": "@forgotPasswordLink"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
             "result": {
+<<<<<<< HEAD
               "duration": 247155000,
               "status": "passed"
             },
@@ -111,11 +206,21 @@
             "name": "I should be able to see A link icon showing three dots with the following options:edit, view, delete",
             "match": {
               "location": "step_definitions.CustomersManagementSteps.i_should_be_able_to_see_a_link_icon_showing_three_dots_with_the_following_options_edit_view_delete()"
+=======
+              "duration": 970172100,
+              "status": "passed"
             },
-            "keyword": "And "
+            "line": 5,
+            "name": "I am crater user, I navigate to the “Prime Tech Invoice Application” login page",
+            "match": {
+              "location": "step_definitions.LoginUIPage.i_am_crater_user_i_navigate_to_the_prime_tech_invoice_application_login_page()"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
+            },
+            "keyword": "Given "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 69063000,
               "status": "passed"
             },
@@ -123,11 +228,21 @@
             "name": "I should be able to see Pagination navigation with left and right controls",
             "match": {
               "location": "step_definitions.CustomersManagementSteps.i_should_be_able_to_see_pagination_navigation_with_left_and_right_controls()"
+=======
+              "duration": 179031300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the Forget Password? Link",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_click_on_the_forget_password_link()"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
             },
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 224744000,
               "status": "passed"
             },
@@ -135,11 +250,25 @@
             "name": "I click on right arrow",
             "match": {
               "location": "step_definitions.CustomersManagementSteps.i_click_on_right_arrow()"
+=======
+              "status": "passed"
             },
-            "keyword": "When "
-          },
+            "line": 7,
+            "name": "I click on the login button",
+            "match": {
+              "location": "step_definitions.LoginUIPage.i_click_on_the_login_button()"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-11T02:43:07.051Z",
+        "before": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 104489000,
               "status": "passed"
             },
@@ -171,11 +300,61 @@
             "name": "I should be able to nevegate to the previous page",
             "match": {
               "location": "step_definitions.CustomersManagementSteps.i_should_be_able_to_nevegate_to_the_previous_page()"
+=======
+              "duration": 952162900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.setup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "As a user, i should be able to reset password",
+        "description": "",
+        "id": "crater-forgot-password;as-a-user--i-should-be-able-to-reset-password",
+        "after": [
+          {
+            "result": {
+              "duration": 209036300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 438078300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter a value for the email value",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_enter_a_value_for_the_email_value()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57510100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "click on the Send Reset Link",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.click_on_the_send_reset_link()"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
             },
             "keyword": "Then "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 24475000,
               "status": "passed"
             },
@@ -195,19 +374,35 @@
             "name": "I am on the last page, right arrow should be disabled",
             "match": {
               "location": "step_definitions.CustomersManagementSteps.i_am_on_the_last_page_right_arrow_should_be_disabled()"
+=======
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I navigate to my gmail and click on the reset password link in my gmail",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_navigate_to_my_gmail_and_click_on_the_reset_password_link_in_my_gmail()"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
             },
             "keyword": "When "
           }
         ],
         "tags": [
           {
+<<<<<<< HEAD
             "name": "@customerTest"
+=======
+            "name": "@forgotPassword"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
           },
           {
-            "name": "@Regression"
+            "name": "@regressionn"
           },
           {
+<<<<<<< HEAD
             "name": "@customerPageValidation"
+=======
+            "name": "@resetPassword"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
           }
         ]
       },
@@ -220,6 +415,7 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 7772089000,
               "status": "passed"
             },
@@ -227,11 +423,21 @@
             "name": "I navigate to Customers tab",
             "match": {
               "location": "step_definitions.CustomersManagementSteps.i_navigate_to_customers_tab()"
+=======
+              "duration": 906478800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am crater user, I navigate to the “Prime Tech Invoice Application” login page",
+            "match": {
+              "location": "step_definitions.LoginUIPage.i_am_crater_user_i_navigate_to_the_prime_tech_invoice_application_login_page()"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
             },
             "keyword": "Given "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 248436000,
               "status": "passed"
             },
@@ -239,17 +445,45 @@
             "name": "Validate I am on the Customers page (Header)",
             "match": {
               "location": "step_definitions.CustomersManagementSteps.validate_i_am_on_the_customers_page_header()"
+=======
+              "duration": 155531000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the Forget Password? Link",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_click_on_the_forget_password_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on the login button",
+            "match": {
+              "location": "step_definitions.LoginUIPage.i_click_on_the_login_button()"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
             },
             "keyword": "Then "
           }
         ]
       },
       {
+<<<<<<< HEAD
         "start_timestamp": "2023-05-12T17:31:06.928Z",
         "before": [
           {
             "result": {
               "duration": 2025304000,
+=======
+        "start_timestamp": "2023-05-11T02:43:09.884Z",
+        "before": [
+          {
+            "result": {
+              "duration": 972671500,
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
               "status": "passed"
             },
             "match": {
@@ -257,6 +491,7 @@
             }
           }
         ],
+<<<<<<< HEAD
         "line": 23,
         "name": "As a user, I am able to create a customer and manage customer",
         "description": "",
@@ -265,6 +500,16 @@
           {
             "result": {
               "duration": 148538000,
+=======
+        "line": 21,
+        "name": "",
+        "description": "",
+        "id": "crater-forgot-password;",
+        "after": [
+          {
+            "result": {
+              "duration": 178531700,
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
               "status": "passed"
             },
             "match": {
@@ -277,6 +522,7 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 389615000,
               "status": "passed"
             },
@@ -296,11 +542,157 @@
             "name": "I should be able to see basic info field",
             "match": {
               "location": "step_definitions.CustomersManagementSteps.i_should_be_able_to_see_basic_info_field()"
+=======
+              "duration": 731761500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I enter invalid value for the email value amd enter email in the incorrect format",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_enter_invalid_value_for_the_email_value_amd_enter_email_in_the_incorrect_format()"
             },
             "keyword": "And "
           },
           {
             "result": {
+              "duration": 1034935100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I should see error message Incorrect Email",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_should_see_error_message_incorrect_email()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2160359000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "If I leave email field blank",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.if_i_leave_email_field_blank()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30005500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I should see error message Field is required",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_should_see_error_message_field_is_required()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@forgotPassword"
+          },
+          {
+            "name": "@regressionn"
+          },
+          {
+            "name": "@invalidResetPassword"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 913661600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am crater user, I navigate to the “Prime Tech Invoice Application” login page",
+            "match": {
+              "location": "step_definitions.LoginUIPage.i_am_crater_user_i_navigate_to_the_prime_tech_invoice_application_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 170030700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the Forget Password? Link",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_click_on_the_forget_password_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on the login button",
+            "match": {
+              "location": "step_definitions.LoginUIPage.i_click_on_the_login_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-11T02:43:16.081Z",
+        "before": [
+          {
+            "result": {
+              "duration": 954673100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.setup()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "As a user, i should be able to reset password via email",
+        "description": "",
+        "id": "crater-forgot-password;as-a-user--i-should-be-able-to-reset-password-via-email",
+        "after": [
+          {
+            "result": {
+              "duration": 174530800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.CommonHooks.teardown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 408151400,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I enter valid Email",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_enter_valid_email()"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+<<<<<<< HEAD
               "duration": 1097000,
               "status": "passed"
             },
@@ -314,11 +706,21 @@
                 }
               ],
               "location": "step_definitions.CustomersManagementSteps.i_click_on_primary_currency_dropdown_i_should_be_able_to_see_different_curencies(java.lang.Integer)"
+=======
+              "duration": 50009100,
+              "status": "passed"
             },
-            "keyword": "When "
+            "line": 30,
+            "name": "I click on Send Reset Link",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_click_on_send_reset_link()"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
+            },
+            "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 137112000,
               "status": "passed"
             },
@@ -338,11 +740,32 @@
             "name": "the Email field does not follow (@domain.com) format, I should see Incorrect Email message",
             "match": {
               "location": "step_definitions.CustomersManagementSteps.the_email_field_does_not_follow_domain_com_format_i_should_see_incorrect_email_message()"
+=======
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I navigate to my gmail and click on the reset password link in my gmail",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_navigate_to_my_gmail_and_click_on_the_reset_password_link_in_my_gmail()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 836147400,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I should be directed to a new page with Email, Password, Retype Password",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_should_be_directed_to_a_new_page_with_email_password_retype_password()"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
             },
             "keyword": "When "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 477711000,
               "status": "passed"
             },
@@ -350,11 +773,35 @@
             "name": "Website field is not correct format,I should see Invalid url error message",
             "match": {
               "location": "step_definitions.CustomersManagementSteps.website_field_is_not_correct_format_i_should_see_invalid_url_ex_http_www_craterapp_com()"
+=======
+              "duration": 435302700,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "i enter valid \"craterusertesting@gmail.com\" \"Password1234@\" and \"Password1234@\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"craterusertesting@gmail.com\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"Password1234@\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"Password1234@\"",
+                  "offset": 64
+                }
+              ],
+              "location": "step_definitions.UserManagementSteps.i_enter_valid_and(java.lang.String,java.lang.String,java.lang.String)"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
             },
             "keyword": "When "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 786299000,
               "status": "passed"
             },
@@ -364,10 +811,22 @@
               "location": "step_definitions.CustomersManagementSteps.i_provide_valid_input_for_the_required_fields_and_click_save_customer_button_i_should_be_directed_to_sales_expenses_page()"
             },
             "keyword": "When "
+=======
+              "duration": 323404900,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "If i validation passed, i should be directed back to login page",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.if_i_validation_passed_i_should_be_directed_back_to_login_page()"
+            },
+            "keyword": "Then "
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
           }
         ],
         "tags": [
           {
+<<<<<<< HEAD
             "name": "@customerTest"
           },
           {
@@ -375,6 +834,15 @@
           },
           {
             "name": "@basicInfoValidation"
+=======
+            "name": "@forgotPassword"
+          },
+          {
+            "name": "@regressionn"
+          },
+          {
+            "name": "@resetPasswordviaEmail"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
           }
         ]
       },
@@ -387,6 +855,7 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 7889088000,
               "status": "passed"
             },
@@ -394,11 +863,21 @@
             "name": "I navigate to Customers tab",
             "match": {
               "location": "step_definitions.CustomersManagementSteps.i_navigate_to_customers_tab()"
+=======
+              "duration": 940667700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am crater user, I navigate to the “Prime Tech Invoice Application” login page",
+            "match": {
+              "location": "step_definitions.LoginUIPage.i_am_crater_user_i_navigate_to_the_prime_tech_invoice_application_login_page()"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
             },
             "keyword": "Given "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 215131000,
               "status": "passed"
             },
@@ -406,17 +885,46 @@
             "name": "Validate I am on the Customers page (Header)",
             "match": {
               "location": "step_definitions.CustomersManagementSteps.validate_i_am_on_the_customers_page_header()"
+=======
+              "duration": 169529800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the Forget Password? Link",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_click_on_the_forget_password_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 500300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on the login button",
+            "match": {
+              "location": "step_definitions.LoginUIPage.i_click_on_the_login_button()"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
             },
             "keyword": "Then "
           }
         ]
       },
       {
+<<<<<<< HEAD
         "start_timestamp": "2023-05-12T17:31:19.420Z",
         "before": [
           {
             "result": {
               "duration": 2209080000,
+=======
+        "start_timestamp": "2023-05-11T02:43:20.366Z",
+        "before": [
+          {
+            "result": {
+              "duration": 947667000,
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
               "status": "passed"
             },
             "match": {
@@ -424,6 +932,7 @@
             }
           }
         ],
+<<<<<<< HEAD
         "line": 33,
         "name": "As a user, I am able to create a customer and manage customer",
         "description": "",
@@ -432,6 +941,16 @@
           {
             "result": {
               "duration": 151097000,
+=======
+        "line": 37,
+        "name": "As a user, i should be able to reset password via email",
+        "description": "",
+        "id": "crater-forgot-password;as-a-user--i-should-be-able-to-reset-password-via-email",
+        "after": [
+          {
+            "result": {
+              "duration": 198535200,
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
               "status": "passed"
             },
             "match": {
@@ -444,6 +963,7 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 399163000,
               "status": "passed"
             },
@@ -463,11 +983,21 @@
             "name": "I click on the Toggle Switch i should view a text box titled: “Customer Portal Login URL” and “http://invoice.primetech-apps.com/crater-invoice/customer/login “ Url",
             "match": {
               "location": "step_definitions.CustomersManagementSteps.i_click_on_the_toggle_switch_i_should_view_a_text_box_titled_customer_portal_login_url_and_http_invoice_primetech_apps_com_crater_invoice_customer_login_url()"
+=======
+              "duration": 398521600,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I enter valid Email",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_enter_valid_email()"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
             },
             "keyword": "When "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 43521000,
               "status": "passed"
             },
@@ -475,11 +1005,21 @@
             "name": "I click copy to clipboard button, I should see “Please copy \u0026 forward the above given URL to your customer for providing access.” message",
             "match": {
               "location": "step_definitions.CustomersManagementSteps.i_click_copy_to_clipboard_button_i_should_see_please_copy_forward_the_above_given_url_to_your_customer_for_providing_access_message()"
+=======
+              "duration": 47008800,
+              "status": "passed"
             },
-            "keyword": "When "
+            "line": 39,
+            "name": "I click on Send Reset Link",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_click_on_send_reset_link()"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
+            },
+            "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 59094000,
               "status": "passed"
             },
@@ -487,11 +1027,20 @@
             "name": "i should be able to see password and confirm password field",
             "match": {
               "location": "step_definitions.CustomersManagementSteps.i_should_be_able_to_see_password_and_confirm_password_field()"
+=======
+              "status": "passed"
             },
-            "keyword": "And "
+            "line": 40,
+            "name": "I navigate to my gmail and click on the reset password link in my gmail",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_navigate_to_my_gmail_and_click_on_the_reset_password_link_in_my_gmail()"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
+            },
+            "keyword": "Then "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 267267000,
               "status": "passed"
             },
@@ -759,12 +1308,47 @@
             "name": "a button titled Copy from Billing",
             "match": {
               "location": "step_definitions.CustomersManagementSteps.a_button_titled_copy_from_billing()"
+=======
+              "duration": 783138300,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I should be directed to a new page with Email, Password, Retype Password",
+            "match": {
+              "location": "step_definitions.UserManagementSteps.i_should_be_directed_to_a_new_page_with_email_password_retype_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "i enter invalid \"craterusertesting@gmail.com\" \"Password1234@\" and \"Password1234@\" and i should see error message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"craterusertesting@gmail.com\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Password1234@\"",
+                  "offset": 46
+                },
+                {
+                  "val": "\"Password1234@\"",
+                  "offset": 66
+                }
+              ],
+              "location": "step_definitions.UserManagementSteps.i_enter_invalid_and_and_i_should_see_error_message(java.lang.String,java.lang.String,java.lang.String)"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
+<<<<<<< HEAD
             "name": "@customerTest"
           },
           {
@@ -933,10 +1517,20 @@
           },
           {
             "name": "@filteringCustomerTableDataValidation"
+=======
+            "name": "@forgotPassword"
+          },
+          {
+            "name": "@regressionn"
+          },
+          {
+            "name": "@invalidResetPasswordviaEmail"
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
           }
         ]
       }
     ],
+<<<<<<< HEAD
     "name": "Customer Management",
     "description": "",
     "id": "customer-management",
@@ -945,6 +1539,16 @@
     "tags": [
       {
         "name": "@customerTest",
+=======
+    "name": "Crater Forgot Password",
+    "description": "",
+    "id": "crater-forgot-password",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/userManagement.feature",
+    "tags": [
+      {
+        "name": "@forgotPassword",
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
         "type": "Tag",
         "location": {
           "line": 1,
@@ -952,11 +1556,19 @@
         }
       },
       {
+<<<<<<< HEAD
         "name": "@Regression",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 15
+=======
+        "name": "@regressionn",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 17
+>>>>>>> 6931484a733cdecfa2fdb80da14d753cbda3742d
         }
       }
     ]

@@ -64,8 +64,9 @@ public class UserManagementSteps {
 	// INVALID RESET PASSWORD
 	
 	@Given("I enter invalid value for the email value amd enter email in the incorrect format")
-	public void i_enter_invalid_value_for_the_email_value_amd_enter_email_in_the_incorrect_format(){
-		loginpage.emailField.sendKeys("craterusertesting.gmail.com");
+	public void i_enter_invalid_value_for_the_email_value_amd_enter_email_in_the_incorrect_format() throws InterruptedException{
+		Thread.sleep(500);
+		utils.actionsSendKeys(loginpage.resetpasswordemail, DataReader.getProperty("IncorrectFormat"));
 	}
 	@Then("I should see error message Incorrect Email")
 	public void i_should_see_error_message_incorrect_email() throws InterruptedException {
@@ -73,8 +74,11 @@ public class UserManagementSteps {
 		loginpage.incorrectEmailErrorMsg.isDisplayed();
 	}
 	@Then("If I leave email field blank")
-	public void if_i_leave_email_field_blank() {
-		loginpage.emailField.sendKeys(" ");
+	public void if_i_leave_email_field_blank() throws InterruptedException {
+		Driver.getDriver().navigate().refresh();
+	      Thread.sleep(2000);
+		utils.actionsSendKeys(loginpage.emailField, " ");
+		
 	}
 	@Then("I should see error message Field is required")
 	public void i_should_see_error_message_field_is_required() {
@@ -139,10 +143,5 @@ public class UserManagementSteps {
 		
 	    
 	}
-	
-	// 
-	
-	
-	
 	
 }
