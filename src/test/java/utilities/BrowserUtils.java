@@ -42,6 +42,19 @@ public class BrowserUtils {
 		action.sendKeys(element, text).build().perform();
 	}
 	
+
+	public void actionsSendKeys(WebElement element, Integer int1) {
+		action = new Actions(Driver.getDriver());
+		action.sendKeys(element, int1.toString()).build().perform();
+	}
+	
+	public void actionsSendMultipleKeys(WebElement element1, String string1, WebElement element2, String string2,WebElement element3,String string3 ) {
+		action = new Actions(Driver.getDriver());
+		action.sendKeys(element1, string1).build().perform();
+		action.sendKeys(element2, string2).build().perform();
+		action.sendKeys(element3,string3).build().perform();
+	}
+	
 	// action click
 	public void actionsClick(WebElement element) {
 		Actions act = new Actions(Driver.getDriver());
