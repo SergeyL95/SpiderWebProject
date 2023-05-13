@@ -52,12 +52,13 @@ public class LoginUIPage {
 
 	@Given("I enter a valid email and password value")
 	public void i_enter_a_valid_email_and_password_value() {
-	    
+		loginpage.emailField.sendKeys("validEmail");
+		loginpage.passwordField.sendKeys("validPassword");
 	}
 
 	@Given("I click on the login button")
 	public void i_click_on_the_login_button() {
-	    
+	    loginpage.loginBtn.click();
 	}
 
 	@Then("The system should validate that the username and password combination matches an existing user record in the application database.")
@@ -72,7 +73,7 @@ public class LoginUIPage {
 
 	@Given("I enter an invalid email and password value,")
 	public void i_enter_an_invalid_emailand_password_value() {
-	    
+		loginpage.emailField.sendKeys(" ");
 	}
 
 	@Then("System should prompt the user with a flash message in a red box with the following text Error Those credentials do not match our records")
@@ -87,17 +88,19 @@ public class LoginUIPage {
 
 	@Given("I leave the email and password field empty")
 	public void i_leave_the_email_and_password_field_empty() {
-	    
+		loginpage.emailField.sendKeys(" ");
+		loginpage.passwordField.sendKeys(" ");
+		
 	}
 
 	@Given("I leave the just email field empty")
 	public void i_leave_the_just_email_field_empty() {
-	   
+		loginpage.emailField.sendKeys(" ");
 	}
 
 	@Given("I leave the just password field empty")
 	public void i_leave_the_just_password_field_empty() {
-	    
+		loginpage.passwordField.sendKeys(" ");
 	}
 
 	@Then("System should prompt the user with the following inline message for the respective scenarios")
